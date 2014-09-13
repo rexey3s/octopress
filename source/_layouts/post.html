@@ -14,8 +14,15 @@ single: true
       <footer>
         <p class="meta text-muted">
           {% include post/author.html %}
+          &bull;
           {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
-          {% include post/categories.html %}
+          &bull;
+          <span class="glyphicon glyphicon-tags"> </span>&nbsp;
+          {% for tag in page.tags %}
+          <a class="badge" href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}
+          {% endunless %}
+          {% endfor %}
+          
         </p>
         {% unless page.sharing == false %}
           {% include post/sharing.html %}

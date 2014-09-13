@@ -2,20 +2,21 @@
 layout: post
 title: "Advanced network security note - 3rd day of class"
 description: ""
-tags: [lecture, note, network, securtiy, summer,Prof. Peter Reiher, 2014]
+tags: [lecture, note, network, securtiy, summer,Prof. Peter Reiher]
+categories: [network, securtiy]
 comments: true
 share: true
 ---
 
-##Authentication and Authorization in Network Security
+### Authentication and Authorization in Network Security
 
 * Authentication is determining who someone is
 * Authorization is determining someone is allowed to do something
 * Authorization usually depends one authentication, which properly is not sufficient
 
-##Perimeter of Defense and networks: Firewall
+### Perimeter of Defense and networks: Firewall
 
-### Perimeter Defense
+#### Perimeter Defense
 * The idea is building an impenetrable perimeter around something valueable to protect it
 * History of perimeter defense : castle, fortress, The Great Wall of China, etc.
 * But they were all failed because of perimeter defense's weaknesses
@@ -32,11 +33,11 @@ share: true
 #### Some types of Firewall
 
 ##### Filtering Gateways (Filtering firewall)
-  * based on packet header information, either let packet go through or reject it
-  * stateless firewall
+- Based on packet header information, either let packet go through or reject it<br>
+- Stateless firewall
 
-##### Pros & cons of filtering firewall
 
+{:.table .table-hover}
 |    Pros.    |     Cons.                         |
 |:------------|:----------------------------------|
 |`Fast`       | `Limited capabilities`            |
@@ -48,8 +49,8 @@ share: true
   * Firewalls that understand the application-level details of network traffic
   * stateful firewall
 
-##### Pros & cons of proxy firewall
 
+{:.table .table-hover}
 |    Pros.                 |           Cons.                    |
 |:-------------------------|:-----------------------------------|
 |`Highly flexiable`        | `Slower`                           |

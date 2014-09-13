@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 navbar: Tags
+permalink: /tags/
 title: Tag Index
 excerpt: "An archive of posts sorted by tag."
 ---
@@ -13,23 +14,24 @@ excerpt: "An archive of posts sorted by tag."
 <ul class="list-inline">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}  
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-    <li style="padding-top: 1px"><a class="btn btn-primary" href="#{{ this_word }}">{{ this_word }} <span class="badge">{{ site.tags[this_word].size }}</span></a></li>
+    <li style="padding-top: 1px"><a class="btn btn-primary btn-sm" href="#{{ this_word }}">{{ this_word }} <span class="badge">{{ site.tags[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul>
 
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-  	<div class="panel panel-default">
-  	<div class="panel-heading">
-	<div class="panel-title">
-	<div id="{{ this_word | cgi_escape }}"><strong>{{ this_word }}</strong></div>
-	</div>
-	</div>
-	<div class="panel-body">
+    {% if site.tags[this_word].size > 0 %}
+    <div class="panel panel-default">
+    <div class="panel-heading">
+  <div class="panel-title">
+  <div id="{{ this_word | cgi_escape }}"><strong>{{ this_word }}</strong></div>
+  </div>
+  </div>
+  <div class="panel-body">
   <ul class="posts list-group">
     {% for post in site.tags[this_word] %}
     {% if post.title != null %}
-    <li class="list-group-item" itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span> &raquo; <a href="{{ post.url }}">{{ post.title }}
+    <li class="list-group-item" itemscope><span class="entry-date label label-success"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span><span class="glyphicon glyphicon-chevron-right"> </span><a href="{{ post.url }}"><strong>{{ post.title }}</strong>
     </a>
     </li>
     {% endif %}
@@ -37,4 +39,6 @@ excerpt: "An archive of posts sorted by tag."
   </ul>
   </div>
   </div>
-  {% endunless %}{% endfor %}---
+  {% endif %}
+  {% endunless %}
+  {% endfor %}
