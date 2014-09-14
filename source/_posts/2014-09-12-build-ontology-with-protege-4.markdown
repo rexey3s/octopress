@@ -6,6 +6,7 @@ tags: [researching, ontology, owl2, protege4]
 categories: [Semantic Web, Ontology]
 comments: true
 share: true
+search_omit: true
 ---
 The purpose that I decided to write this article are reviewing all the stuffs about ontology in my research progress, sharing knowledge about semantic web technology and finding some new ideas for my thesis at university.
 In this first article, I will make a brief tutorial how to build an ontology by using Protege and OWL2 - a web ontology language.

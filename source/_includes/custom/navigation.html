@@ -47,6 +47,17 @@
                     </div>
                 </form>
             {% endif %}
+            {% if site.static_search %} 
+                   <a href="/search" class="btn btn-default navbar-btn pull-right"><span class="glyphicon glyphicon-search"> </span></a>
+                <form class="search navbar-form navbar-right">
+                    <div class="form-group">
+
+                    <input id="navbar-search-query" type="text" class="form-control" name="q" placeholder="Search" autocomplete="off">
+                    </div>
+         
+
+                </form>
+            {% endif %}
         </div>
     </div>
 </nav>

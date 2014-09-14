@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://rexey3s.github.io
-title: "Fighter Dreamer"
+title: "Fighting Dreamer"
 subtitle: A blogging framework for hackers.
 author: rexey3s
-simple_search: https://www.google.com/search
 description:
+static_search: /search/
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -51,7 +51,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [custom/asides/search_result.html,asides/recent_posts.html,custom/asides/category_list.html, custom/asides/tag_list.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -59,7 +59,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # post_asides:
 # page_asides:
 post_asides: [
-    asides/recent_posts.html,custom/asides/category_list.html, custom/asides/tag_list.html, asides/github.html
+    custom/asides/search_result.html,asides/recent_posts.html,custom/asides/category_list.html, custom/asides/tag_list.html, asides/github.html
 ]
 # ----------------------- #
 #   3rd Party Settings    #
@@ -101,3 +101,9 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+gems: ['jekyll-lunr-js-search']
+lunr_search:
+  excludes: [rss.xml, atom.xml, '/tags/', '/blog/archives']
+  stopwords: "stopwords.txt"
+  min_length: 3

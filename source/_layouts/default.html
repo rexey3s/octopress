@@ -10,6 +10,17 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+    $(function() {
+      $('#navbar-search-query').lunrSearch({
+        indexUrl: '/search.json',             // URL of the `search.json` index data for your site
+        results:  '#aside-search-results',          // jQuery selector for the search results container
+        entries:  '.aside-entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
+        template: '#aside-search-results-template'  // jQuery selector for the Mustache.js template
+      });
+    });
+    </script>
+    <script src="/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
     <footer role="contentinfo">{% include footer.html %}</footer>
     {% include after_footer.html %}
   </body>

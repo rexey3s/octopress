@@ -2,7 +2,7 @@
 <!-- site_tags: {{ site_tags }} -->
 {% assign tag_words = site_tags | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
-  <div class="panel panel-default">
+  <section class="panel panel-default">
     <div class="panel-heading">
   <div class="panel-title">
   <strong>Tags</strong>
@@ -16,4 +16,4 @@
   {% endunless %}{% endfor %}
 </ul>
 </div>
-</div>
+</section>

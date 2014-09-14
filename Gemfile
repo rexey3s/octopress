@@ -15,6 +15,9 @@ group :development do
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
   gem 'kramdown', '~> 1.4.1' 
+  gem 'json', '~> 1.8.1'
+  gem 'nokogiri', '> 1.6'
+  gem 'jekyll-lunr-js-search', '> 0'
 end
 
 gem 'sinatra', '~> 1.4.2'
