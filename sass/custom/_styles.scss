@@ -23,15 +23,16 @@ footer[role=contentinfo] {
   display: none;
 }
 
-#sidebar-toggle:hover .fa-toggle-on,
-#sidebar-toggle .fa-toggle-off {
+#sidebar-toggle:hover .fa-toggle-off,
+#sidebar-toggle .fa-toggle-on {
     display: none;
 }
-#sidebar-toggle:hover .fa-toggle-off {
+#sidebar-toggle:hover .fa-toggle-on {
     display: inline;
 }
+
 #sidebar-toggle.toggled .fa-toggle-on {
-  display: none;
+    display: none;
 };
 #sidebar-toggle.toggled .fa-toggle-off {
     display: inline;

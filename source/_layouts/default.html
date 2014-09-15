@@ -33,9 +33,16 @@
               $('.page-content').addClass('col-md-9');
         }
       });
+
+       
+
     });
     </script>
-    <script src="/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(".navbar-fixed-top").autoHidingNavbar();
+    </script>
+    <script src="{{ root_url }}/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
+
     <footer role="contentinfo">{% include footer.html %}</footer>
     {% include after_footer.html %}
   </body>

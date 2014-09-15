@@ -3,7 +3,7 @@ layout: post
 title: "Advanced network security note - 3rd day of class"
 description: ""
 tags: [lecture, note, network, securtiy, summer,Prof. Peter Reiher]
-categories: [network, securtiy]
+categories: [network securtiy]
 comments: true
 share: true
 ---

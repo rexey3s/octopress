@@ -13,7 +13,13 @@ h1, h2, h3, {
     }
     font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif
 }
-
+.sidebar a {
+    font-size: 14px;
+    @media only screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif
+}
 q {
     font-style: italic;
     &:before {
