@@ -18,3 +18,21 @@ html, body {
 footer[role=contentinfo] {
     height: 60px;
 }
+/* */
+.toggled {
+  display: none;
+}
+
+#sidebar-toggle:hover .fa-toggle-on,
+#sidebar-toggle .fa-toggle-off {
+    display: none;
+}
+#sidebar-toggle:hover .fa-toggle-off {
+    display: inline;
+}
+#sidebar-toggle.toggled .fa-toggle-on {
+  display: none;
+};
+#sidebar-toggle.toggled .fa-toggle-off {
+    display: inline;
+}
