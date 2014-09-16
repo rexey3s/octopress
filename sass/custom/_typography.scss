@@ -6,7 +6,7 @@ h1, h2, h3, {
     font-weight: bold;
 }
 
-.entry-content {
+.entry-content,.page-header {
     font-size: 14px;
     @media only screen and (min-width: 768px) {
         font-size: 16px;
@@ -20,6 +20,7 @@ h1, h2, h3, {
     }
     font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif
 }
+
 q {
     font-style: italic;
     &:before {

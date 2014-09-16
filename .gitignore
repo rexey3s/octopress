@@ -1,3 +1,6 @@
+config.ru
+config.rb
+source/_post
 _config.yml
 .bundle
 .DS_Store

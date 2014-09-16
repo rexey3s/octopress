@@ -18,6 +18,8 @@ group :development do
   gem 'json', '~> 1.8.1'
   gem 'nokogiri', '> 1.6'
   gem 'jekyll-lunr-js-search', '> 0'
+  gem 'pygments.rb', '>0'
+  # gem 'gsl', '~> 1.15.3'
 end
 
 gem 'sinatra', '~> 1.4.2'

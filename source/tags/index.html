@@ -27,8 +27,7 @@ excerpt: "An archive of posts sorted by tag."
   <div id="{{ this_word | cgi_escape }}"><strong>{{ this_word }}</strong></div>
   </div>
   </div>
-  <div class="panel-body">
-  <ul class="posts list-group">
+  <div class="panel-body posts list-group">
     {% for post in site.tags[this_word] %}
     {% if post.title != null %}
     <li class="list-group-item" itemscope><span class="entry-date label label-success"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span><span class="glyphicon glyphicon-chevron-right"> </span><a href="{{ post.url }}"><strong>{{ post.title }}</strong>
@@ -36,7 +35,6 @@ excerpt: "An archive of posts sorted by tag."
     </li>
     {% endif %}
     {% endfor %}
-  </ul>
   </div>
   </div>
   {% endif %}
