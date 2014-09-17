@@ -4,7 +4,7 @@ title: "How to build this blog - Part 1"
 date: 2014-09-15 13:19:42 +0700
 comments: true
 categories: [Tutorials]
-tags: [jekyll, octopress, lunr-search, kramdown, bootstrap3, octostrap3, github, gh-page]
+tags: [jekyll, octopres, bootstrap3, octostrap3, github, gh-page]
 ---
 
 >It's been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I've just figured out [Octopress](http://octopress.org/) - A blogging framework for hackers - which is on top of jekyll.It helps making the simple blog never easier. And one of the most awesome thing that they are all free ! So in this tutorial, I'll guide you step-to-step to build a simple blog like mine.
@@ -119,7 +119,7 @@ _Comments powered by Disqus - signup [one](https://disqus.com) if you don't have
 
 **Learn more about [Octopress config](http://octopress.org/docs/configuring/)**
 
-### Customize the blog
+### Customize your blog
 
 #### Changing default theme
 
@@ -177,22 +177,32 @@ myblog$ rake setup_github_pages
 
 The ``rake`` task will ask you for a URL of your Github Repo which can be one of 2 following forms:
 
-* git@github.com:username/username.github.io.git
-* https://github.com/username/username.github.io
+* ``git@github.com:username/username.github.io.git``
+* ``https://github.com/username/username.github.io``
 
 **Deploy**
+
 ``` sh ~/myblog/
 myblog$ rake generate
 myblog$ rake deploy # You will be prompted for Github username and password
 ```
 
-
 Now go to ``username.github.io`` and see your result. 
 
-One more important thing is to backup your Octopress's code to Github too. In ``~/myblog/`` dir remove ``origin`` branch from Octopress, then you may not want to public your ``_config.yml`` file just add it to ``.gitignore``
+One more important thing is to backup your Octopress's code to Github too. In ``~/myblog/`` dir ``init`` a new git to push your source to a repo that would store your Octopress's code. Note: You may not want to public your ``_config.yml`` file just add it to ``.gitignore``
 
 ``` sh ~/myblog/
-myblog$ git rm -r --cached . # <= resync gitignore
-myblog$ git remote rm origin
-myblog$ git remote add source 
+myblog$ git init 
+myblog$ git remote add origin https://github.com/username/blog-src.git
+myblog$ git add .
+myblog$ git commit -m 'Backup src to 'source' branch'
+myblog$ git push origin master
 ```
+
+Great, now your blog has been online, hosted by Github Page which is free of charge and also your source code has been subversioned by Github. There are more interesting stuffs about Octopress that I will see you in the next part.
+
+Here some helpful links:
+
+ * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) - the language
+ * [Octopress Docs](http://opress.org/docs)
+ * [Bootwatch](http://bootswatch.com) - Bootstrap's Themes
