@@ -180,3 +180,19 @@ The ``rake`` task will ask you for a URL of your Github Repo which can be one of
 * git@github.com:username/username.github.io.git
 * https://github.com/username/username.github.io
 
+**Deploy**
+``` sh ~/myblog/
+myblog$ rake generate
+myblog$ rake deploy # You will be prompted for Github username and password
+```
+
+
+Now go to ``username.github.io`` and see your result. 
+
+One more important thing is to backup your Octopress's code to Github too. In ``~/myblog/`` dir remove ``origin`` branch from Octopress, then you may not want to public your ``_config.yml`` file just add it to ``.gitignore``
+
+``` sh ~/myblog/
+myblog$ git rm -r --cached . # <= resync gitignore
+myblog$ git remote rm origin
+```
+    
