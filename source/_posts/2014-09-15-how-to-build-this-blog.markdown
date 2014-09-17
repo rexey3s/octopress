@@ -33,7 +33,7 @@ By browsing above address you can see your beautifully simplified site now there
 #### Early Deployment to Github Page
 
 * Sign in into your GitHub account, create [one](https://github.com/) if you don't have
-* Create a new repository with name like **YOUR_GITHUB_NAME.github.io**
+* Create a new repository with name like **username.github.io**
 * E.g., my repo for this blog is ``rexey3s.github.io``
 * Now back to your console and make sure you have Git installed
 
@@ -43,10 +43,10 @@ $cd my-blog
 my-blog$ git init 
 my-blog$ git add .
 my-blog$ git commit -m 'Deloying my Jekyll Blog'
-my-blog$ git remote add origin https://github.com/<YOUR_GITHUB_NAME>/<YOUR_GITHUB_NAME>.github.io
+my-blog$ git remote add origin https://github.com/<username>/<username>.github.io
 my-blog$ git push origin master
 ```
-Go to your browser and pointing to **YOUR_GITHUB_NAME.github.io**, as you can see your blog is now online without any 3rd party host.
+Go to your browser and pointing to **username.github.io**, as you can see your blog is now online without any 3rd party host.
 
 If you want to build your site from scratch, you can carefully read the [docs](http://jekyllrb.com/docs/usage/) and again deloy it to GitHub Page. There are many options to deploy a Jekyll site, GitHub Page is just a free and great one. But if you want a quick and easy customizable site then continue reading.
 
@@ -84,7 +84,7 @@ myblog$ vim _config.yml
 # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
-url: http://<YOUR_GITHUB_NAME>.github.io
+url: http://<username>.github.io
 title: "put your blog title here"
 subtitle: A blogging framework for hackers.
 author: me
@@ -194,5 +194,5 @@ One more important thing is to backup your Octopress's code to Github too. In ``
 ``` sh ~/myblog/
 myblog$ git rm -r --cached . # <= resync gitignore
 myblog$ git remote rm origin
+myblog$ git remote add source 
 ```
-    
