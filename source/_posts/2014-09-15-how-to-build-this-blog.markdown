@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to build this blog"
+title: "How to build this blog - Part 1"
 date: 2014-09-15 13:19:42 +0700
 comments: true
 categories: [Tutorials]
@@ -133,7 +133,7 @@ This blog uses [Octostrap3](https://github.com/kAworu/octostrap3) and [Bootwatch
 
 Go to [Bootwatch](http://bootswatch.com/) and choose the theme you like, then copy ``bootstrap.min.css`` 's content and replace your ``myblog/source/assets/bootstrap/dist/css/bootstrap-theme.min.css``  by its content. **Refresh your browser** at [localhost:4000/](http://localhost:4000/) and check out the new look.
 
-### Create About and Tags page 
+### Create About page 
 
 **About page**
 
@@ -164,4 +164,19 @@ Then navigate to ``source/_includes/custom/navigation.html`` add the following s
     <a href="/about/">About</a>
 </li>
 ```
+
+### Deploy to GitHub pages
+
+Now, you don't need to run ``git`` anymore ``rake deploy`` will do it for you 
+
+``` sh ~/myblog/
+myblog$ rake preview
+myblog$ # => take a look at your blog on http://localhost:4000 before were deploy it
+myblog$ rake setup_github_pages
+```
+
+The ``rake`` task will ask you for a URL of your Github Repo which can be one of 2 following forms:
+
+* git@github.com:username/username.github.io.git
+* https://github.com/username/username.github.io
 

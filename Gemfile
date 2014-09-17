@@ -19,7 +19,7 @@ group :development do
   gem 'nokogiri', '> 1.6'
   gem 'jekyll-lunr-js-search', '> 0'
   gem 'pygments.rb', '>0'
-  # gem 'gsl', '~> 1.15.3'
+  gem 'gsl', '>= 1'
 end
 
 gem 'sinatra', '~> 1.4.2'
