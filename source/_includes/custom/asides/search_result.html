@@ -1,0 +1,16 @@
+  <div id="aside-search-results" style="display: none;" class="panel panel-default">
+  <div class="panel-heading">
+  <div class="panel-title">
+      <strong>Search results</strong>
+  </div>
+  </div>
+<div class="list-group aside-entries">
+</div>
+</div>
+{% raw %}
+<script id="aside-search-results-template" type="text/mustache">
+  {{#entries}}
+        <a  href="{{url}}" class="list-group-item"><code>{{title}}</code></a>
+  {{/entries}}
+</script>
+{% endraw %}

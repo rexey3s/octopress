@@ -1,0 +1,51 @@
+/* nice sticky footer, from http://getbootstrap.com/examples/sticky-footer/ */
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+
+  #main {
+    padding-top: 90px;
+  }
+  .navbar-fixed-top {
+    border-top: 5px solid #4582ec;
+  }
+}
+
+article.hentry, article.post  {
+  border: 1px solid #e9e9e9;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+/* Set the fixed height of the footer here */
+footer[role=contentinfo] {
+    height: 60px;
+}
+/* */
+.toggled {
+  display: none;
+}
+
+#sidebar-toggle:hover .fa-toggle-off,
+#sidebar-toggle .fa-toggle-on {
+    display: none;
+}
+#sidebar-toggle:hover .fa-toggle-on {
+    display: inline;
+}
+#sidebar-toggle.toggled .fa-toggle-on {
+    display: none;
+};
+#sidebar-toggle.toggled .fa-toggle-off {
+    display: inline;
+}
