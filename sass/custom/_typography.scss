@@ -1,3 +1,6 @@
+/* here i defined font-stack */
+$font-stack: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 h1, h2, h3 {
     margin-top: 32px;
     margin-bottom: 12px;
@@ -11,14 +14,14 @@ h1, h2, h3, {
     @media only screen and (min-width: 768px) {
         font-size: 16px;
     }
-    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: $font-stack;
 }
 .sidebar a {
     font-size: 14px;
     @media only screen and (min-width: 768px) {
         font-size: 16px;
     }
-    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: $font-stack;
 }
 
 q {

@@ -1,17 +1,20 @@
 ---
 layout: post
-title: "How to build this blog - Part 1"
+title: "How to build your blog with Octopress - Part 1"
 date: 2014-09-15 13:19:42 +0700
 comments: true
-categories: [Tutorials]
-tags: [jekyll, octopres, bootstrap3, octostrap3, github, gh-page]
+categories: [Tutorials, Octopress]
+tags: [jekyll, octopress, bootstrap3, octostrap3, github, gh-page]
 ---
 
->It's been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I've just figured out [Octopress](http://octopress.org/) - A blogging framework for hackers - which is on top of jekyll.It helps making the simple blog never easier. And one of the most awesome thing that they are all free ! So in this tutorial, I'll guide you step-to-step to build a simple blog like mine.
+>It's been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I've just figured out [Octopress](http://octopress.org/) - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most awesome thing that I love them is they are all free !.
 
-First of all, we need to install and config a lot, I'll try to make it simple.
+>In this tutorial, I'll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don't need to know much about Jekyll because Octopress will handle it for you.    
+
+First of all, we need to install and config a lot,but  I'll try to make it simple.
 <h3>Jekyll Installation</h3>
-Jekyll is a static site generator - more on [Jekyllrb](http://jekyllrb.com/docs/home/). [GitHub Pages](https://pages.github.com/) uses it, so everything you write in Jekyll will easily host on Github. 
+To whom still don't know, [Jekyll](http://jekyllrb.com/docs/home/) is a static site generator which helps you generate your site's or blog's contents ( usually written in Markdown) into static contents (e.g., html, css and javascript). In addition, [GitHub Pages](https://pages.github.com/) have been using [Jekyll](http://jekyllrb.com/) as their pages generator , so everything you write in Jekyll will easily host on Github.
+
 <h4>Requirements</h4>
 * [**Ruby >= 1.9**](http://www.ruby-lang.org/en/downloads/) - Read [this](https://gorails.com/setup) if you don't have Ruby installed   
 * [**RubyGems**](http://rubygems.org/pages/download)
@@ -48,7 +51,7 @@ my-blog$ git push origin master
 ```
 Go to your browser and pointing to **username.github.io**, as you can see your blog is now online without any 3rd party host.
 
-If you want to build your site from scratch, you can carefully read the [docs](http://jekyllrb.com/docs/usage/) and again deloy it to GitHub Page. There are many options to deploy a Jekyll site, GitHub Page is just a free and great one. But if you want a quick and easy customizable site then continue reading.
+If you want to build your site from scratch, you can carefully read the [docs](http://jekyllrb.com/docs/usage/) and again deloy it to GitHub Page. There are many options to deploy a Jekyll site, GitHub Page is just a free and awesome one. But if you want a quick and easy customizable site then continue reading.
 
 ### Octopress Installation
 **Setup Octopress**
@@ -100,6 +103,8 @@ Note: After changing any configs in **_config.yml**, you have to type ``rake gen
 
 ``` sh ~/myblog/
 myblog$ vim _config.yml
+```
+``` vim _config.yml
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
@@ -133,7 +138,7 @@ This blog uses [Octostrap3](https://github.com/kAworu/octostrap3) and [Bootwatch
 
 Go to [Bootwatch](http://bootswatch.com/) and choose the theme you like, then copy ``bootstrap.min.css`` 's content and replace your ``myblog/source/assets/bootstrap/dist/css/bootstrap-theme.min.css``  by its content. **Refresh your browser** at [localhost:4000/](http://localhost:4000/) and check out the new look.
 
-### Create About page 
+### Creat About page 
 
 **About page**
 
@@ -151,7 +156,7 @@ navbar: About
     </a>
   </div>
   <div class="col-xs-8 col-md-5">
-    <p>Write about you</p>
+    <p>Write something about you</p>
   </div>
 </div>
 ```
@@ -180,7 +185,7 @@ The ``rake`` task will ask you for a URL of your Github Repo which can be one of
 * ``git@github.com:username/username.github.io.git``
 * ``https://github.com/username/username.github.io``
 
-**Deploy**
+**Deploying**
 
 ``` sh ~/myblog/
 myblog$ rake generate
@@ -189,7 +194,7 @@ myblog$ rake deploy # You will be prompted for Github username and password
 
 Now go to ``username.github.io`` and see your result. 
 
-One more important thing is to backup your Octopress's code to Github too. In ``~/myblog/`` dir ``init`` a new git to push your source to a repo that would store your Octopress's code. Note: You may not want to public your ``_config.yml`` file just add it to ``.gitignore``
+One more important thing is to backup your Octopress's code to Github too. In ``~/myblog/`` dir, ``init`` a new git to push your source to a repo that would store your Octopress's code. Note: You may not want to public your ``_config.yml`` file, then you can add it to ``.gitignore``
 
 ``` sh ~/myblog/
 myblog$ git init 
@@ -199,10 +204,77 @@ myblog$ git commit -m 'Backup src to 'source' branch'
 myblog$ git push origin master
 ```
 
-Great, now your blog has been online, hosted by Github Page which is free of charge and also your source code has been subversioned by Github. There are more interesting stuffs about Octopress that I will see you in the next part.
+Great, now your blog has been online, hosted by Github Page which is free of charge and also your source code has been subversioned by Github.
 
-Here some helpful links:
+Last but not least, I have to mention that your posts should been written in [Markdown](https://help.github.com/articles/markdown-basics) which allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to valid HTML for viewing on GitHub or anywhere that has a Markdown Conversion Tool. I pretty sure that you will find it easier than writting you own HTML ;). Here is an example to illustrate my words:
 
- * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) - the language
+I have a code snippet
+
+``` sh Code snippet example
+$ jekyll serve
+```
+
+If I wrote it in HTML, it would be like this:
+
+``` html HTML elements of Code snippet example
+<div class="bogus-wrapper">
+ <notextile>
+  <figure class="code">
+   <figcaption>
+    <span>Code snippet example</span>
+   </figcaption>
+   <div class="highlight">
+    <table>
+     <tbody><tr>
+      <td class="gutter">
+        <pre class="line-numbers">
+         <span class="line-number">1</span>
+        </pre>
+      </td>
+      <td class="code">
+       <pre>
+         <code class="sh">
+          <span class="line"><span class="nv">$ </span>jekyll serve</span>
+         </code>
+        </pre>
+      </td>
+     </tr>
+    </tbody>
+    </table>
+   </div>
+ </figure>
+ </notextile>
+</div>
+
+```
+
+Then I wrote it in Markdown, which would be easily generated to the HTML above
+
+```
+ ```sh Code snippet example
+ $ jekyll serve
+ ```
+```
+
+As you have seen, ```  is a syntax for code snippet and  **sh** is specified the language that it would syntax highlighted for - is this example, It is **bash/shell**. Markdown syntax is just beautiful and simplified.
+
+### Create a new post
+
+```sh ~/myblog/
+myblog$ rake new_post["this_is_the_title"]
+```
+
+Then, go to ``myblog/source/_posts/`` to edit your new post, you can use any editor you like to write it in Markdown syntax. **Note**: the filename of your post would be in the following form
+
+* ``year-month-day-title.md`` - you should not change its ``date`` prefix.
+
+So now you would be able to deploy your site online and create a new post.  Please take a look at Markdown syntax link below, it will help you a lot when writing your post. Happy blogging! 
+
+Here are some helpful links:
+
+ * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) - The language syntax
  * [Octopress Docs](http://opress.org/docs)
  * [Bootwatch](http://bootswatch.com) - Bootstrap's Themes
+
+>There are still a lot interesting stuffs about Octopress that I would like to show you in the next part of this tutorial. See ya! Thank you for reading my post.
+
