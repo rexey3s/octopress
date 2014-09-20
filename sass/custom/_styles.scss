@@ -2,19 +2,8 @@
 html, body {
   font-family: $font-stack;
   height: 100%;
-    
-  #table-of-contents {
-    position: fixed;
-    bottom: 0px;
-    margin-left: 100px;
-    width: 175px;
-    display: block;  
-    opacity: 0.6;
-    
-    @media screen and (max-width: 768px) {
-     display:none;
-    }
-  }
+
+
   /* The html and body elements cannot have any padding or margin. */
 }
 /* Wrapper for page content to push down footer */
@@ -32,12 +21,50 @@ html, body {
   }
   .navbar-fixed-top {
     /*border-top: 5px solid #4582ec;*/
+    background: #f2f2f2;
+    border-width: 0 0 0px;
   }
   article.hentry, article.post  {
    
     margin-bottom: 20px;
     margin-top: auto;
   }
+
+  #table-of-contents {
+    position: fixed;
+    bottom: 5px;
+    
+    min-width: 125px;
+
+    display: block;  
+    
+
+
+    #toc-trigger, .progress {
+      min-height: 40px;
+      padding: 0px;
+      position: relative;
+
+      .progress-bar {
+        min-height: 40px;
+        /*max-width: inherit;*/
+        /*opacity: 0.3;*/
+      }
+      span {
+        position: absolute;
+        display: block;
+        width: 100%;
+        color: black;
+      }
+
+    }
+
+    @media screen and (max-width: 768px) {
+     display:none;
+    }
+   
+  }
+
 
 }
   /* */

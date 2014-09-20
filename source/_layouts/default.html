@@ -11,7 +11,6 @@
         </div>
       </div>
     </div>
-    {% include post/toc.html %}
     <script type="text/javascript">
     $(function() {
  
@@ -38,7 +37,19 @@
       });
       $('#toc-trigger').click(function() {
         $('#toc-body').toggleClass('toggled');
+      });
+      $(window).scroll(function () {
+        var s = $(window).scrollTop(),
+        d = $(document).height(),
+        c = $(window).height();
+        scrollPercent = (s / (d-c)) * 100;
+        var position = scrollPercent;
+
+        $("#toc-trigger .progress-bar").attr('aria-valuenow', position);
+        $("#toc-trigger .progress-bar").css('width',scrollPercent+"%");
+
       });   
+      $('.entry-content').scrollspy({ target: '#toc-body' });
     });
     </script>
     <script type="text/javascript">

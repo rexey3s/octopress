@@ -1,15 +1,18 @@
  {% if page.contents %}
-  <div id="table-of-contents" class="panel panel-default">
-    <a id="toc-trigger" class="list-group-item panel-heading" style="cursor: pointer;">
-    CONTENTS
-    <i class="pull-right fa fa-bars fa-lg" > </i>
-    </a>
-      <div id="toc-body" class="toggled" >
-      {% for content in page.contents %}
+  <div id="table-of-contents" >
+    <div id="toc-trigger" class="progress list-group-item" style="cursor: pointer;">
+    
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+    <span style="min-height:40px; padding-top:8px"><strong> Contents&nbsp;&nbsp;<i class="fa fa-bars fa-lg">  </i></strong>
+      </span>
+    </div>
+        </div>
 
-          <a class="list-group-item" style="cursor: pointer;" href="#{{ content | downcase | replace: ' ','-' }}">{{ content }}</a>{% unless forloop.last %}
+      <div id="toc-body" class="toggled nav" >
+      {% for content in page.contents %}
+        <a  class="list-group-item" style="cursor: pointer;" href="#{{ content | downcase | replace: ' ','-' }}">{{ content }}</a>{% unless forloop.last %}
           {% endunless %}
       {% endfor %}
      </div>
-  </div>
+</div>
 {% endif %}
