@@ -9,20 +9,14 @@ h1, h2, h3, {
     font-weight: bold;
 }
 
-.entry-content,.page-header {
+.entry-content, .page-header, .sidebar a, footer, .related-posts {
     font-size: 14px;
     @media only screen and (min-width: 768px) {
         font-size: 16px;
     }
     font-family: $font-stack;
 }
-.sidebar a {
-    font-size: 14px;
-    @media only screen and (min-width: 768px) {
-        font-size: 16px;
-    }
-    font-family: $font-stack;
-}
+
 
 q {
     font-style: italic;

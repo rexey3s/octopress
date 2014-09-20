@@ -1,7 +1,21 @@
 /* nice sticky footer, from http://getbootstrap.com/examples/sticky-footer/ */
 html, body {
-    height: 100%;
-    /* The html and body elements cannot have any padding or margin. */
+  font-family: $font-stack;
+  height: 100%;
+    
+  #table-of-contents {
+    position: fixed;
+    bottom: 0px;
+    margin-left: 100px;
+    width: 175px;
+    display: block;  
+    opacity: 0.6;
+    
+    @media screen and (max-width: 768px) {
+     display:none;
+    }
+  }
+  /* The html and body elements cannot have any padding or margin. */
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -14,14 +28,13 @@ html, body {
   padding: 0 0 60px;
 
   #main {
-    padding-top: 90px;
+    padding-top: 80px;
   }
   .navbar-fixed-top {
-    border-top: 5px solid #4582ec;
+    /*border-top: 5px solid #4582ec;*/
   }
   article.hentry, article.post  {
-    border: 1px solid #e9e9e9;
-    padding: 20px;
+   
     margin-bottom: 20px;
     margin-top: auto;
   }

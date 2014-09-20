@@ -20,6 +20,8 @@ group :development do
   gem 'jekyll-lunr-js-search', '> 0'
   gem 'pygments.rb', '>0'
   gem 'gsl', '>= 1'
+  gem 'execjs'
+  gem 'therubyracer'
 end
 
 gem 'sinatra', '~> 1.4.2'

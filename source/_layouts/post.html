@@ -47,9 +47,9 @@ single: true
       </section>
     {% endif %}
   </div>
-
+  
   {% unless page.sidebar == false or site.post_asides == empty and site.default_asides == empty %}
-  <aside class="sidebar col-md-3 toggled" >
+  <aside class="col-md-3 sidebar toggled" >
     {% if site.post_asides.size %}
       {% include_array post_asides %}
     {% else %}

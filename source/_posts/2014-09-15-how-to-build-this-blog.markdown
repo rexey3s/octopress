@@ -4,22 +4,30 @@ title: "How to build your blog with Octopress - Part 1"
 date: 2014-09-15 13:19:42 +0700
 comments: true
 categories: [Tutorials, Octopress]
-tags: [jekyll, octopress, bootstrap3, octostrap3, github, gh-page]
+contents: [Introduction, Jekyll Installation, Octopress Installation, Customize your blog, Deploy to GitHub pages, Create a new post]
+tags: [jekyll, octopress, bootstrap3, octostrap3, github, github-page]
 ---
 
->It's been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I've just figured out [Octopress](http://octopress.org/) - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most awesome thing that I love them is they are all free !.
+### Introduction
+
+>It's been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I've just figured out [Octopress](http://octopress.org/) - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most important reason that I love them is they are all free!
 
 >In this tutorial, I'll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don't need to know much about Jekyll because Octopress will handle it for you.    
 
 First of all, we need to install and config a lot,but  I'll try to make it simple.
-<h3>Jekyll Installation</h3>
+
+### Jekyll Installation 
+
 To whom still don't know, [Jekyll](http://jekyllrb.com/docs/home/) is a static site generator which helps you generate your site's or blog's contents ( usually written in Markdown) into static contents (e.g., html, css and javascript). In addition, [GitHub Pages](https://pages.github.com/) have been using [Jekyll](http://jekyllrb.com/) as their pages generator , so everything you write in Jekyll will easily host on Github.
 
-<h4>Requirements</h4>
+#### Requirements
+
 * [**Ruby >= 1.9**](http://www.ruby-lang.org/en/downloads/) - Read [this](https://gorails.com/setup) if you don't have Ruby installed   
 * [**RubyGems**](http://rubygems.org/pages/download)
 * **Linux, Unix or MacOS** 
-<h4>Install via RubyGem</h4>
+
+#### Install via RubyGem
+
 ``` sh ~/
 $ gem install jekyll
 ```
@@ -54,7 +62,8 @@ Go to your browser and pointing to **username.github.io**, as you can see your b
 If you want to build your site from scratch, you can carefully read the [docs](http://jekyllrb.com/docs/usage/) and again deloy it to GitHub Page. There are many options to deploy a Jekyll site, GitHub Page is just a free and awesome one. But if you want a quick and easy customizable site then continue reading.
 
 ### Octopress Installation
-**Setup Octopress**
+
+#### Setup Octopress
 
 ``` sh ~/
 $ mkdir myblog
@@ -138,7 +147,7 @@ This blog uses [Octostrap3](https://github.com/kAworu/octostrap3) and [Bootwatch
 
 Go to [Bootwatch](http://bootswatch.com/) and choose the theme you like, then copy ``bootstrap.min.css`` 's content and replace your ``myblog/source/assets/bootstrap/dist/css/bootstrap-theme.min.css``  by its content. **Refresh your browser** at [localhost:4000/](http://localhost:4000/) and check out the new look.
 
-### Creat About page 
+#### Create About page 
 
 **About page**
 

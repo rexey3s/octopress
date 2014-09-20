@@ -1,0 +1,15 @@
+ {% if page.contents %}
+  <div id="table-of-contents" class="panel panel-default">
+    <a id="toc-trigger" class="list-group-item panel-heading" style="cursor: pointer;">
+    CONTENTS
+    <i class="pull-right fa fa-bars fa-lg" > </i>
+    </a>
+      <div id="toc-body" class="toggled" >
+      {% for content in page.contents %}
+
+          <a class="list-group-item" style="cursor: pointer;" href="#{{ content | downcase | replace: ' ','-' }}">{{ content }}</a>{% unless forloop.last %}
+          {% endunless %}
+      {% endfor %}
+     </div>
+  </div>
+{% endif %}

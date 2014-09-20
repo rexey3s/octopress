@@ -11,6 +11,7 @@
         </div>
       </div>
     </div>
+    {% include post/toc.html %}
     <script type="text/javascript">
     $(function() {
  
@@ -27,15 +28,17 @@
               $('.page-content').removeClass('col-md-9');
               $('.page-content').addClass('col-md-offset-2');
               $('.page-content').addClass('col-md-8');
+              $('#table-of-contents').show();
         } else {
            $('.page-content').removeClass('col-md-8');
               $('.page-content').removeClass('col-md-offset-2');
               $('.page-content').addClass('col-md-9');
+              $('#table-of-contents').hide();
         }
       });
-
-       
-
+      $('#toc-trigger').click(function() {
+        $('#toc-body').toggleClass('toggled');
+      });   
     });
     </script>
     <script type="text/javascript">
