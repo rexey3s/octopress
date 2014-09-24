@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ontology | Fighting Dreamer]]></title>
+  <link href="http://chuongdang.com/blog/categories/ontology/atom.xml" rel="self"/>
+  <link href="http://chuongdang.com/"/>
+  <updated>2014-09-23T23:32:51+07:00</updated>
+  <id>http://chuongdang.com/</id>
+  <author>
+    <name><![CDATA[Chuong Dang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Build Ontology OWL2 With Protege]]></title>
+    <link href="http://chuongdang.com/blog/2014/09/12/build-ontology-with-protege-4.markdown"/>
+    <updated>2014-09-12T00:00:00+07:00</updated>
+    <id>http://chuongdang.com/blog/2014/09/12/build-ontology-with-protege-4.markdown</id>
+    <content type="html"><![CDATA[<p>The purpose that I decided to write this article are reviewing all the stuffs about ontology in my research progress, sharing knowledge about semantic web technology and finding some new ideas for my thesis at university.
+In this first article, I will make a brief tutorial how to build an ontology by using Protege and OWL2 - a web ontology language.</p>
+<h2> What is an ontology ? Is it a puzzle word ? </h2>
+<ul>
+  <li>
+    <p>In short, an ontology represent the knowledge within a domain. But I prefer calling it’s <code>knowledge of knowledge</code>. <strong>E.g.</strong>, an ontology which represent a Transportation domain, properly has classes such as Vehicle, Vessel, Train, Aircraft, etc. and all individuals 
+which belong to these classes.
+<br />
+ <em>I know it may be confused if it is the first time you have heard about it.
+But I hope ontology will be more comprehensive as far as you go through this article</em></p>
+  </li>
+  <li>
+    <p><strong>OWL Ontology</strong></p>
+
+    <ul>
+      <li>OWL <strong>Ontology</strong> is a set of axioms, which assert explicitly 3 types of things  <strong>classes</strong>, <strong>individuals</strong> and <strong>properties</strong>. Using <strong>reasoner</strong>we can infer other implicit facts which are hidden in the ontology. </li>
+      <li><strong>E.g.</strong>, Individual <code>FerrariF430</code> belongs to class <code>Car</code>, and the class <code>Car</code> is a subclass of <code>Vehicle</code>, a reasoner will infer that <code>FerrariF430</code> is also a <code>Vehicle</code>.</li>
+      <li>Moreover, there are 2 types of properties in OWL ontologies:
+        <ul>
+          <li>Data Properties: we can call they are properties of an individual itself, it links individual to a piece of typed data. <strong>E.g.</strong>, <code>xsd:dateTime, xsd:String</code></li>
+          <li>Object Properties: represent the relationship among individuals or the individuals itself (<code>reflective</code> Object Property)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

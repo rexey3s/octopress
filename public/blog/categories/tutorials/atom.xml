@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tutorials | Fighting Dreamer]]></title>
+  <link href="http://chuongdang.com/blog/categories/tutorials/atom.xml" rel="self"/>
+  <link href="http://chuongdang.com/"/>
+  <updated>2014-09-23T23:32:51+07:00</updated>
+  <id>http://chuongdang.com/</id>
+  <author>
+    <name><![CDATA[Chuong Dang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to Build Your Blog With Octopress - Part 1]]></title>
+    <link href="http://chuongdang.com/blog/2014/09/15/how-to-build-this-blog"/>
+    <updated>2014-09-15T13:19:42+07:00</updated>
+    <id>http://chuongdang.com/blog/2014/09/15/how-to-build-this-blog</id>
+    <content type="html"><![CDATA[<h3 id="introduction">Introduction</h3>
+
+<blockquote>
+  <p>It’s been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I’ve just figured out <a href="http://octopress.org/">Octopress</a> - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most important reason that I love them is they are all free!</p>
+</blockquote>
+
+<blockquote>
+  <p>In this tutorial, I’ll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don’t need to know much about Jekyll because Octopress will handle it for you.    </p>
+</blockquote>
+
+<p>First of all, we need to install and config a lot,but  I’ll try to make it simple.</p>
+
+<h3 id="jekyll-installation">Jekyll Installation</h3>
+
+<p>To whom still don’t know, <a href="http://jekyllrb.com/docs/home/">Jekyll</a> is a static site generator which helps you generate your site’s or blog’s contents ( usually written in Markdown) into static contents (e.g., html, css and javascript). In addition, <a href="https://pages.github.com/">GitHub Pages</a> have been using <a href="http://jekyllrb.com/">Jekyll</a> as their pages generator , so everything you write in Jekyll will easily host on Github.</p>
+
+<h4 id="requirements">Requirements</h4>
+
+<ul>
+  <li><a href="http://www.ruby-lang.org/en/downloads/"><strong>Ruby &gt;= 1.9</strong></a> - Read <a href="https://gorails.com/setup">this</a> if you don’t have Ruby installed   </li>
+  <li><a href="http://rubygems.org/pages/download"><strong>RubyGems</strong></a></li>
+  <li><strong>Linux, Unix or MacOS</strong> </li>
+</ul>
+
+<h4 id="install-via-rubygem">Install via RubyGem</h4>
+
+<p><code>sh ~/
+$ gem install jekyll
+</code>
+<strong>Now you can easily start your site by</strong></p>
+
+<p><code>sh ~/
+$ jekyll new my-blog
+$ cd my-blog
+my-blog$ jekyll serve 
+# =&gt; Now browse to http://localhost:4000
+</code>
+By browsing above address you can see your beautifully simplified site now there. </p>
+
+<h4 id="early-deployment-to-github-page">Early Deployment to Github Page</h4>
+
+<ul>
+  <li>Sign in into your GitHub account, create <a href="https://github.com/">one</a> if you don’t have</li>
+  <li>Create a new repository with name like <strong>username.github.io</strong></li>
+  <li>E.g., my repo for this blog is <code>rexey3s.github.io</code></li>
+  <li>Now back to your console and make sure you have Git installed</li>
+</ul>
+
+<p><code>sh ~/
+$sudo apt-get install git
+$cd my-blog
+my-blog$ git init 
+my-blog$ git add .
+my-blog$ git commit -m 'Deloying my Jekyll Blog'
+my-blog$ git remote add origin https://github.com/&lt;username&gt;/&lt;username&gt;.github.io
+my-blog$ git push origin master
+</code>
+Go to your browser and pointing to <strong>username.github.io</strong>, as you can see your blog is now online without any 3rd party host.</p>
+
+<p>If you want to build your site from scratch, you can carefully read the <a href="http://jekyllrb.com/docs/usage/">docs</a> and again deloy it to GitHub Page. There are many options to deploy a Jekyll site, GitHub Page is just a free and awesome one. But if you want a quick and easy customizable site then continue reading.</p>
+
+<h3 id="octopress-installation">Octopress Installation</h3>
+
+<h4 id="setup-octopress">Setup Octopress</h4>
+
+<p><code>sh ~/
+$ mkdir myblog
+$ git clone git://github.com/imathis/octopress.git myblog
+$ cd myblog
+</code></p>
+
+<p><strong>Install dependencies</strong></p>
+
+<p><code>sh ~/myblog/
+myblog$ gem install bundler
+myblog$ bundle install
+</code></p>
+
+<p><strong>Install Octopress</strong> - Choose your <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">themes</a> </p>
+
+<p><code>sh ~/myblog/
+myblog$ git submodule add GIT_THEME_URL .themes/THEME_NAME
+myblog$ rake install['THEME_NAME']
+myblog$ rake generate
+# =&gt; Now browse to http://localhost:4000
+</code></p>
+
+<h4 id="octopress-config">Octopress config</h4>
+
+<p><strong>_config.yml</strong> - Jekyll main config file </p>
+
+<p><code>sh ~/myblog/
+myblog$ vim _config.yml
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+url: http://&lt;username&gt;.github.io
+title: "put your blog title here"
+subtitle: A blogging framework for hackers.
+author: me
+description:
+date_format:        # Format dates using Ruby's date strftime syntax
+subscribe_rss:      # Url for your blog's feed, defauts to /atom.xml
+subscribe_email:    # Url to subscribe by email (service required)
+</code></p>
+
+<p>Note: After changing any configs in <strong>_config.yml</strong>, you have to type <code>rake generate</code> again to take effect</p>
+
+<p><strong>Octopress bundled with a lot 3rd Party setting setting</strong></p>
+
+<p><code>sh ~/myblog/
+myblog$ vim _config.yml
+</code>
+<code>vim _config.yml
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+# Github
+github_user: YOUR_GITHUB
+# Twitter
+twitter_user: YOUR_TWTTTER_NAME
+twitter_tweet_button: true
+# Disqus Comments
+disqus_short_name: DISQUS_NAME
+disqus_show_comment_count: false
+# Facebook Like
+facebook_like: false
+</code></p>
+
+<p><em>Comments powered by Disqus - signup <a href="https://disqus.com">one</a> if you don’t have</em></p>
+
+<p><strong>Learn more about <a href="http://octopress.org/docs/configuring/">Octopress config</a></strong></p>
+
+<h3 id="customize-your-blog">Customize your blog</h3>
+
+<h4 id="changing-default-theme">Changing default theme</h4>
+
+<p>This blog uses <a href="https://github.com/kAworu/octostrap3">Octostrap3</a> and <a href="http://bootswatch.com/readable/">Bootwatch Readable</a></p>
+
+<p><code>sh ~/myblog/
+~/myblog$ git clone https://github.com/kAworu/octostrap3 .themes/octostrap3
+~/myblog$ rake install[octostrap3]
+~/myblog$ rake generate
+</code></p>
+
+<p>Go to <a href="http://bootswatch.com/">Bootwatch</a> and choose the theme you like, then copy <code>bootstrap.min.css</code> ‘s content and replace your <code>myblog/source/assets/bootstrap/dist/css/bootstrap-theme.min.css</code>  by its content. <strong>Refresh your browser</strong> at <a href="http://localhost:4000/">localhost:4000/</a> and check out the new look.</p>
+
+<h4 id="create-about-page">Create About page</h4>
+
+<p><strong>About page</strong></p>
+
+<h2 id="html-sourceaboutindexhtml">&#8220;` html source/about/index.html</h2>
+<p>layout: page
+title: “About”
+footer: true
+navbar: About
+—
+&lt;div class=&#8221;row&#8221;&gt;
+  &lt;div class=&#8221;col-xs-8 col-md-3&#8221;&gt;
+    <a href="#" class="thumbnail"><br />
+    <img src="http://chuongdang.com/images/bio-photo-alt.jpg" title="Avatar" />
+    </a>
+  &lt;/div&gt;
+  &lt;div class=&#8221;col-xs-8 col-md-5&#8221;&gt;
+    &lt;p&gt;Write something about you&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&#8220;`</p>
+
+<p>Then navigate to <code>source/_includes/custom/navigation.html</code> add the following snippet to inside <code>div.navbar-collapse</code> tag</p>
+
+<p>&#8220;` html ~/myblog/source/_includes/custom/navigation.html</p>
+<li>
+    <a href="http://chuongdang.com/about/">About</a>
+</li>
+<p>&#8220;`</p>
+
+<h3 id="deploy-to-github-pages">Deploy to GitHub pages</h3>
+
+<p>Now, you don’t need to run <code>git</code> anymore <code>rake deploy</code> will do it for you </p>
+
+<p><code>sh ~/myblog/
+myblog$ rake preview
+myblog$ # =&gt; take a look at your blog on http://localhost:4000 before were deploy it
+myblog$ rake setup_github_pages
+</code></p>
+
+<p>The <code>rake</code> task will ask you for a URL of your Github Repo which can be one of 2 following forms:</p>
+
+<ul>
+  <li><code>git@github.com:username/username.github.io.git</code></li>
+  <li><code>https://github.com/username/username.github.io</code></li>
+</ul>
+
+<p><strong>Deploying</strong></p>
+
+<p><code>sh ~/myblog/
+myblog$ rake generate
+myblog$ rake deploy # You will be prompted for Github username and password
+</code></p>
+
+<p>Now go to <code>username.github.io</code> and see your result. </p>
+
+<p>One more important thing is to backup your Octopress’s code to Github too. In <code>~/myblog/</code> dir, <code>init</code> a new git to push your source to a repo that would store your Octopress’s code. Note: You may not want to public your <code>_config.yml</code> file, then you can add it to <code>.gitignore</code></p>
+
+<p><code>sh ~/myblog/
+myblog$ git init 
+myblog$ git remote add origin https://github.com/username/blog-src.git
+myblog$ git add .
+myblog$ git commit -m 'Backup src to 'source' branch'
+myblog$ git push origin master
+</code></p>
+
+<p>Great, now your blog has been online, hosted by Github Page which is free of charge and also your source code has been subversioned by Github.</p>
+
+<p>Last but not least, I have to mention that your posts should been written in <a href="https://help.github.com/articles/markdown-basics">Markdown</a> which allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to valid HTML for viewing on GitHub or anywhere that has a Markdown Conversion Tool. I pretty sure that you will find it easier than writting you own HTML ;). Here is an example to illustrate my words:</p>
+
+<p>I have a code snippet</p>
+
+<p><code>sh Code snippet example
+$ jekyll serve
+</code></p>
+
+<p>If I wrote it in HTML, it would be like this:</p>
+
+<p>&#8220;` html HTML elements of Code snippet example
+&lt;div class=&#8221;bogus-wrapper&#8221;&gt;</p>
+<notextile>
+  <figure class="code">
+   <figcaption>
+    <span>Code snippet example</span>
+   </figcaption>
+   <div class="highlight">
+    <table>
+     <tbody><tr>
+      <td class="gutter">
+        <pre class="line-numbers">
+         <span class="line-number">1</span>
+        </pre>
+      </td>
+      <td class="code">
+       <pre>
+         <code class="sh">
+          <span class="line"><span class="nv">$ </span>jekyll serve</span>
+         </code>
+        </pre>
+      </td>
+     </tr>
+    </tbody>
+    </table>
+   </div>
+ </figure>
+ </notextile>
+<p>&lt;/div&gt;</p>
+
+<p>&#8220;`</p>
+
+<p>Then I wrote it in Markdown, which would be easily generated to the HTML above</p>
+
+<p><code>
+</code>sh Code snippet example
+ $ jekyll serve
+ <code>
+</code></p>
+
+<p>As you have seen, &#8220;`  is a syntax for code snippet and  <strong>sh</strong> is specified the language that it would syntax highlighted for - is this example, It is <strong>bash/shell</strong>. Markdown syntax is just beautiful and simplified.</p>
+
+<h3 id="create-a-new-post">Create a new post</h3>
+
+<p><code>sh ~/myblog/
+myblog$ rake new_post["this_is_the_title"]
+</code></p>
+
+<p>Then, go to <code>myblog/source/_posts/</code> to edit your new post, you can use any editor you like to write it in Markdown syntax. <strong>Note</strong>: the filename of your post would be in the following form</p>
+
+<ul>
+  <li><code>year-month-day-title.md</code> - you should not change its <code>date</code> prefix.</li>
+</ul>
+
+<p>So now you would be able to deploy your site online and create a new post.  Please take a look at Markdown syntax link below, it will help you a lot when writing your post. Happy blogging! </p>
+
+<p>Here are some helpful links:</p>
+
+<ul>
+  <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> - The language syntax</li>
+  <li><a href="http://opress.org/docs">Octopress Docs</a></li>
+  <li><a href="http://bootswatch.com">Bootwatch</a> - Bootstrap’s Themes</li>
+</ul>
+
+<blockquote>
+  <p>There are still a lot interesting stuffs about Octopress that I would like to show you in the next part of this tutorial. See ya! Thank you for reading my post.</p>
+</blockquote>
+
+]]></content>
+  </entry>
+  
+</feed>

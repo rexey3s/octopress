@@ -8,11 +8,11 @@
     </div>
         </div>
 
-      <div id="toc-body" class="toggled nav" >
+      <ul id="toc-body" class="toggled" >
       {% for content in page.contents %}
-        <a  class="list-group-item" style="cursor: pointer;" href="#{{ content | downcase | replace: ' ','-' }}">{{ content }}</a>{% unless forloop.last %}
+        <li><a  class="list-group-item" style="cursor: pointer;" href="#{{ content | downcase | replace: ' ','-' }}">{{ content }}</a></li>{% unless forloop.last %}
           {% endunless %}
       {% endfor %}
-     </div>
+     </ul>
 </div>
 {% endif %}

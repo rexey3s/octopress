@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://chuongdang.com/blog/2014/09/20/reading-list-week-1</loc>
+    
+    <lastmod>2014-09-20T15:19:47+07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuongdang.com/blog/2014/09/15/how-to-build-this-blog</loc>
+    
+    <lastmod>2014-09-15T13:19:42+07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuongdang.com/blog/2014/09/12/build-ontology-with-protege-4.markdown</loc>
+    
+    <lastmod>2014-09-12T00:00:00+07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuongdang.com/blog/2014/08/20/third-day-of-advancded-network-security-class</loc>
+    
+    <lastmod>2014-08-20T00:00:00+07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuongdang.com/blog/2014/08/20/afternoon-third-day-of-advanced-network-security-class</loc>
+    
+    <lastmod>2014-08-20T00:00:00+07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://chuongdang.com/tags/</loc>
+    <lastmod>2014-09-23T23:32:51+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuongdang.com/blog/archives/</loc>
+    <lastmod>2014-09-23T23:32:51+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuongdang.com/search/</loc>
+    <lastmod>2014-09-23T23:32:51+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuongdang.com/</loc>
+    <lastmod>2014-09-23T23:32:51+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuongdang.com/about/</loc>
+    <lastmod>2014-09-23T23:32:51+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+</urlset>
