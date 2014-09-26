@@ -4,7 +4,7 @@
 
 url: http://chuongdang.com
 title: "Fighting Dreamer"
-subtitle: A blogging framework for hackers.
+subtitle: "What the phở !"
 author: Chuong Dang
 description:
 static_search: /search/
@@ -41,9 +41,9 @@ markdown: kramdown
 #     - smart
 highlighter: pygments # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
+paginate: 2         # Posts per page on the blog index
 paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
-recent_posts: 5       # Posts in the sidebar Recent Posts section
+recent_posts: 3       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
 

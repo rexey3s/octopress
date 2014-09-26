@@ -3,6 +3,10 @@ html, body {
   font-family: $font-stack;
   height: 100%;
 
+  .navbar-nav > li > a:hover {
+    border: 2px solid #4582ec !important;
+  }
+  
 
   /* The html and body elements cannot have any padding or margin. */
 }

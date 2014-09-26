@@ -5,8 +5,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{ root_url }}/"><strong>{{ site.title }}</strong></a>
         </div>
@@ -18,9 +16,6 @@
                 </li>
                 <li {% if page.navbar == 'Archives' %}class="active"{% endif %}>
                     <a href="{{ root_url }}/blog/archives">Archives</a>
-                </li>
-                 <li {% if page.navbar == 'Tags' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/tags/">Tags</a>
                 </li>
                  <li {% if page.navbar == 'About' %}class="active"{% endif %}>
                     <a href="{{ root_url }}/about/">About</a>
