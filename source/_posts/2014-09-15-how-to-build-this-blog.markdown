@@ -10,14 +10,17 @@ tags: [jekyll, octopress, bootstrap3, octostrap3, github, github-page]
 
 ### Introduction
 
+{:.text-justify}
 >It's been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I've just figured out [Octopress](http://octopress.org/) - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most important reason that I love them is they are all free!
 
+{:.text-justify}
 >In this tutorial, I'll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don't need to know much about Jekyll because Octopress will handle it for you.    
 
 First of all, we need to install and config a lot,but  I'll try to make it simple.
 
 ### Jekyll Installation 
 
+{:.text-justify}
 To whom still don't know, [Jekyll](http://jekyllrb.com/docs/home/) is a static site generator which helps you generate your site's or blog's contents ( usually written in Markdown) into static contents (e.g., html, css and javascript). In addition, [GitHub Pages](https://pages.github.com/) have been using [Jekyll](http://jekyllrb.com/) as their pages generator , so everything you write in Jekyll will easily host on Github.
 
 #### Requirements
@@ -43,6 +46,7 @@ By browsing above address you can see your beautifully simplified site now there
 
 #### Early Deployment to Github Page
 
+{:.text-justify}
 * Sign in into your GitHub account, create [one](https://github.com/) if you don't have
 * Create a new repository with name like **username.github.io**
 * E.g., my repo for this blog is ``rexey3s.github.io``
@@ -57,8 +61,11 @@ my-blog$ git commit -m 'Deloying my Jekyll Blog'
 my-blog$ git remote add origin https://github.com/<username>/<username>.github.io
 my-blog$ git push origin master
 ```
+
+{:.text-justify}
 Go to your browser and pointing to **username.github.io**, as you can see your blog is now online without any 3rd party host.
 
+{:.text-justify}
 If you want to build your site from scratch, you can carefully read the [docs](http://jekyllrb.com/docs/usage/) and again deloy it to GitHub Page. There are many options to deploy a Jekyll site, GitHub Page is just a free and awesome one. But if you want a quick and easy customizable site then continue reading.
 
 ### Octopress Installation
@@ -145,6 +152,7 @@ This blog uses [Octostrap3](https://github.com/kAworu/octostrap3) and [Bootwatch
 ~/myblog$ rake generate
 ```
 
+{:.text-justify}
 Go to [Bootwatch](http://bootswatch.com/) and choose the theme you like, then copy ``bootstrap.min.css`` 's content and replace your ``myblog/source/assets/bootstrap/dist/css/bootstrap-theme.min.css``  by its content. **Refresh your browser** at [localhost:4000/](http://localhost:4000/) and check out the new look.
 
 #### Create About page 
@@ -203,6 +211,7 @@ myblog$ rake deploy # You will be prompted for Github username and password
 
 Now go to ``username.github.io`` and see your result. 
 
+{:.text-justify}
 One more important thing is to backup your Octopress's code to Github too. In ``~/myblog/`` dir, ``init`` a new git to push your source to a repo that would store your Octopress's code. Note: You may not want to public your ``_config.yml`` file, then you can add it to ``.gitignore``
 
 ``` sh ~/myblog/
@@ -215,6 +224,7 @@ myblog$ git push origin master
 
 Great, now your blog has been online, hosted by Github Page which is free of charge and also your source code has been subversioned by Github.
 
+{:.text-justify}
 Last but not least, I have to mention that your posts should been written in [Markdown](https://help.github.com/articles/markdown-basics) which allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to valid HTML for viewing on GitHub or anywhere that has a Markdown Conversion Tool. I pretty sure that you will find it easier than writting you own HTML ;). Here is an example to illustrate my words:
 
 I have a code snippet
@@ -265,6 +275,7 @@ Then I wrote it in Markdown, which would be easily generated to the HTML above
  ```
 ```
 
+{:.text-justify}
 As you have seen, ```  is a syntax for code snippet and  **sh** is specified the language that it would syntax highlighted for - is this example, It is **bash/shell**. Markdown syntax is just beautiful and simplified.
 
 ### Create a new post
@@ -273,10 +284,12 @@ As you have seen, ```  is a syntax for code snippet and  **sh** is specified the
 myblog$ rake new_post["this_is_the_title"]
 ```
 
+{:.text-justify}
 Then, go to ``myblog/source/_posts/`` to edit your new post, you can use any editor you like to write it in Markdown syntax. **Note**: the filename of your post would be in the following form
 
 * ``year-month-day-title.md`` - you should not change its ``date`` prefix.
 
+{:.text-justify}
 So now you would be able to deploy your site online and create a new post.  Please take a look at Markdown syntax link below, it will help you a lot when writing your post. Happy blogging! 
 
 Here are some helpful links:

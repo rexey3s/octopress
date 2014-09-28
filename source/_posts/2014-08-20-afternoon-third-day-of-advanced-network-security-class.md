@@ -2,7 +2,7 @@
 layout: post
 title: "Advanced network security note - 3rd day of class - Afternoon"
 description: ""
-tags: [lecture, note, network, securtiy, summer,Prof. Peter Reiher]
+tags: [lecture, note, network, securtiy, summer]
 categories: [network securtiy]
 comments: true
 share: true
@@ -49,23 +49,31 @@ share: true
 #### 1.Make the target pay more
 
 ##### Denial of Service and Asymmetry
+
+{:.text-justify}
 * sometimes generating a request is cheaper than formulating a repsonse
 * If so, one attack machine can generate a lot of requests and effectively multiply its power
 * E.g., send random garbage packets to machine expectig encrypted packets (obviously it have to decrypt those packets, which is an expensive process)
 * Not always possible to achieve this asymmetry but often can be done
 
 #### An example is SYN Flood
+
+{:.text-justify}
 * TCP is connection-oriented
 * Endpoints must keep information about current tcp conn. for detecting loss of packet and doing flow contronl and managing congestion
 * Typically kept in a table of **fixed size** - *so attack this table not the bandwidth*
 
 ##### The TCP open connection table
+
+{:.text-justify}
 * Design to support many TCP connections at a time.E.g., for high volume web server
 * One entry per conn.
 * reuse an entry once the connection ends
 * some legitimate conns. will be slow
 
 ##### The basic of attack
+
+{:.text-justify}
 * Attacker uses initial req/resp to start tcp sessions
 * then he abandons them
 * target keeps them open for a while
@@ -73,6 +81,7 @@ share: true
 
 ##### How to defense
 
+{:.text-justify}
 1. Don't let the attacker take too many open connection slots
   * Maybe restrict to 3 or 4 slots per IP addr
   * Doesn't help if attacker has a lot of machines and attacker spoofs IP addr
@@ -86,6 +95,7 @@ share: true
   * so, what *currency* can we make him pay in ?
   * The solution is using SYN Cookies
 
+{:.text-justify}
 * Good aspects of this approach
     - doesn't change tcp protocol
     - doesn't require clients to do anything

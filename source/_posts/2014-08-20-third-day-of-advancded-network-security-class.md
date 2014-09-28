@@ -2,7 +2,7 @@
 layout: post
 title: "Advanced network security note - 3rd day of class"
 description: ""
-tags: [lecture, note, network, securtiy, summer,Prof. Peter Reiher]
+tags: [lecture, note, network, securtiy, summer]
 categories: [network securtiy]
 comments: true
 share: true
@@ -10,6 +10,7 @@ share: true
 
 ### Authentication and Authorization in Network Security
 
+{:.text-justify}
 * Authentication is determining who someone is
 * Authorization is determining someone is allowed to do something
 * Authorization usually depends one authentication, which properly is not sufficient
@@ -17,11 +18,15 @@ share: true
 ### Perimeter of Defense and networks: Firewall
 
 #### Perimeter Defense
+
+{:.text-justify}
 * The idea is building an impenetrable perimeter around something valueable to protect it
 * History of perimeter defense : castle, fortress, The Great Wall of China, etc.
 * But they were all failed because of perimeter defense's weaknesses
 
 #### Weaknesses of Perimeter Defense models
+
+{:.text-justify}
 * Breaching the perimeter compromises all security
 * 2 major assumptions:
   - The barrier is impenetrable (It usually isn't)
@@ -33,8 +38,10 @@ share: true
 #### Some types of Firewall
 
 ##### Filtering Gateways (Filtering firewall)
-- Based on packet header information, either let packet go through or reject it<br>
-- Stateless firewall
+
+{:.text-justify}
+* Based on packet header information, either let packet go through or reject it
+* Stateless firewall
 
 
 {:.table .table-hover}

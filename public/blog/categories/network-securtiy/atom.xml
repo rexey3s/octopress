@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Network Securtiy | Fighting Dreamer]]></title>
   <link href="http://chuongdang.com/blog/categories/network-securtiy/atom.xml" rel="self"/>
   <link href="http://chuongdang.com/"/>
-  <updated>2014-09-28T00:01:47+07:00</updated>
+  <updated>2014-09-28T10:45:51+07:00</updated>
   <id>http://chuongdang.com/</id>
   <author>
     <name><![CDATA[Chuong Dang]]></name>
@@ -20,7 +20,7 @@
     <id>http://chuongdang.com/blog/2014/08/20/third-day-of-advancded-network-security-class</id>
     <content type="html"><![CDATA[<h3 id="authentication-and-authorization-in-network-security">Authentication and Authorization in Network Security</h3>
 
-<ul>
+<ul class="text-justify">
   <li>Authentication is determining who someone is</li>
   <li>Authorization is determining someone is allowed to do something</li>
   <li>Authorization usually depends one authentication, which properly is not sufficient</li>
@@ -29,14 +29,16 @@
 <h3 id="perimeter-of-defense-and-networks-firewall">Perimeter of Defense and networks: Firewall</h3>
 
 <h4 id="perimeter-defense">Perimeter Defense</h4>
-<ul>
+
+<ul class="text-justify">
   <li>The idea is building an impenetrable perimeter around something valueable to protect it</li>
   <li>History of perimeter defense : castle, fortress, The Great Wall of China, etc.</li>
   <li>But they were all failed because of perimeter defense’s weaknesses</li>
 </ul>
 
 <h4 id="weaknesses-of-perimeter-defense-models">Weaknesses of Perimeter Defense models</h4>
-<ul>
+
+<ul class="text-justify">
   <li>Breaching the perimeter compromises all security</li>
   <li>2 major assumptions:
     <ul>
@@ -54,8 +56,9 @@
 <h4 id="some-types-of-firewall">Some types of Firewall</h4>
 
 <h5 id="filtering-gateways-filtering-firewall">Filtering Gateways (Filtering firewall)</h5>
-<ul>
-  <li>Based on packet header information, either let packet go through or reject it<br /></li>
+
+<ul class="text-justify">
+  <li>Based on packet header information, either let packet go through or reject it</li>
   <li>Stateless firewall</li>
 </ul>
 
@@ -197,7 +200,8 @@
 <h4 id="make-the-target-pay-more">1.Make the target pay more</h4>
 
 <h5 id="denial-of-service-and-asymmetry">Denial of Service and Asymmetry</h5>
-<ul>
+
+<ul class="text-justify">
   <li>sometimes generating a request is cheaper than formulating a repsonse</li>
   <li>If so, one attack machine can generate a lot of requests and effectively multiply its power</li>
   <li>E.g., send random garbage packets to machine expectig encrypted packets (obviously it have to decrypt those packets, which is an expensive process)</li>
@@ -205,14 +209,16 @@
 </ul>
 
 <h4 id="an-example-is-syn-flood">An example is SYN Flood</h4>
-<ul>
+
+<ul class="text-justify">
   <li>TCP is connection-oriented</li>
   <li>Endpoints must keep information about current tcp conn. for detecting loss of packet and doing flow contronl and managing congestion</li>
   <li>Typically kept in a table of <strong>fixed size</strong> - <em>so attack this table not the bandwidth</em></li>
 </ul>
 
 <h5 id="the-tcp-open-connection-table">The TCP open connection table</h5>
-<ul>
+
+<ul class="text-justify">
   <li>Design to support many TCP connections at a time.E.g., for high volume web server</li>
   <li>One entry per conn.</li>
   <li>reuse an entry once the connection ends</li>
@@ -220,7 +226,8 @@
 </ul>
 
 <h5 id="the-basic-of-attack">The basic of attack</h5>
-<ul>
+
+<ul class="text-justify">
   <li>Attacker uses initial req/resp to start tcp sessions</li>
   <li>then he abandons them</li>
   <li>target keeps them open for a while</li>
@@ -229,7 +236,7 @@
 
 <h5 id="how-to-defense">How to defense</h5>
 
-<ol>
+<ol class="text-justify">
   <li>Don’t let the attacker take too many open connection slots
     <ul>
       <li>Maybe restrict to 3 or 4 slots per IP addr</li>
@@ -253,7 +260,7 @@
   </li>
 </ol>
 
-<ul>
+<ul class="text-justify">
   <li>Good aspects of this approach
     <ul>
       <li>doesn’t change tcp protocol</li>

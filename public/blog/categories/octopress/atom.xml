@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Fighting Dreamer]]></title>
   <link href="http://chuongdang.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://chuongdang.com/"/>
-  <updated>2014-09-28T00:01:47+07:00</updated>
+  <updated>2014-09-28T10:45:51+07:00</updated>
   <id>http://chuongdang.com/</id>
   <author>
     <name><![CDATA[Chuong Dang]]></name>
@@ -20,11 +20,11 @@
     <id>http://chuongdang.com/blog/2014/09/15/how-to-build-this-blog</id>
     <content type="html"><![CDATA[<h3 id="introduction">Introduction</h3>
 
-<blockquote>
+<blockquote class="text-justify">
   <p>It’s been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I’ve just figured out <a href="http://octopress.org/">Octopress</a> - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most important reason that I love them is they are all free!</p>
 </blockquote>
 
-<blockquote>
+<blockquote class="text-justify">
   <p>In this tutorial, I’ll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don’t need to know much about Jekyll because Octopress will handle it for you.    </p>
 </blockquote>
 
@@ -32,7 +32,7 @@
 
 <h3 id="jekyll-installation">Jekyll Installation</h3>
 
-<p>To whom still don’t know, <a href="http://jekyllrb.com/docs/home/">Jekyll</a> is a static site generator which helps you generate your site’s or blog’s contents ( usually written in Markdown) into static contents (e.g., html, css and javascript). In addition, <a href="https://pages.github.com/">GitHub Pages</a> have been using <a href="http://jekyllrb.com/">Jekyll</a> as their pages generator , so everything you write in Jekyll will easily host on Github.</p>
+<p class="text-justify">To whom still don’t know, <a href="http://jekyllrb.com/docs/home/">Jekyll</a> is a static site generator which helps you generate your site’s or blog’s contents ( usually written in Markdown) into static contents (e.g., html, css and javascript). In addition, <a href="https://pages.github.com/">GitHub Pages</a> have been using <a href="http://jekyllrb.com/">Jekyll</a> as their pages generator , so everything you write in Jekyll will easily host on Github.</p>
 
 <h4 id="requirements">Requirements</h4>
 
@@ -59,7 +59,7 @@ By browsing above address you can see your beautifully simplified site now there
 
 <h4 id="early-deployment-to-github-page">Early Deployment to Github Page</h4>
 
-<ul>
+<ul class="text-justify">
   <li>Sign in into your GitHub account, create <a href="https://github.com/">one</a> if you don’t have</li>
   <li>Create a new repository with name like <strong>username.github.io</strong></li>
   <li>E.g., my repo for this blog is <code>rexey3s.github.io</code></li>
@@ -74,10 +74,11 @@ my-blog$ git add .
 my-blog$ git commit -m 'Deloying my Jekyll Blog'
 my-blog$ git remote add origin https://github.com/&lt;username&gt;/&lt;username&gt;.github.io
 my-blog$ git push origin master
-</code>
-Go to your browser and pointing to <strong>username.github.io</strong>, as you can see your blog is now online without any 3rd party host.</p>
+</code></p>
 
-<p>If you want to build your site from scratch, you can carefully read the <a href="http://jekyllrb.com/docs/usage/">docs</a> and again deloy it to GitHub Page. There are many options to deploy a Jekyll site, GitHub Page is just a free and awesome one. But if you want a quick and easy customizable site then continue reading.</p>
+<p class="text-justify">Go to your browser and pointing to <strong>username.github.io</strong>, as you can see your blog is now online without any 3rd party host.</p>
+
+<p class="text-justify">If you want to build your site from scratch, you can carefully read the <a href="http://jekyllrb.com/docs/usage/">docs</a> and again deloy it to GitHub Page. There are many options to deploy a Jekyll site, GitHub Page is just a free and awesome one. But if you want a quick and easy customizable site then continue reading.</p>
 
 <h3 id="octopress-installation">Octopress Installation</h3>
 
@@ -163,7 +164,7 @@ facebook_like: false
 ~/myblog$ rake generate
 </code></p>
 
-<p>Go to <a href="http://bootswatch.com/">Bootwatch</a> and choose the theme you like, then copy <code>bootstrap.min.css</code> ‘s content and replace your <code>myblog/source/assets/bootstrap/dist/css/bootstrap-theme.min.css</code>  by its content. <strong>Refresh your browser</strong> at <a href="http://localhost:4000/">localhost:4000/</a> and check out the new look.</p>
+<p class="text-justify">Go to <a href="http://bootswatch.com/">Bootwatch</a> and choose the theme you like, then copy <code>bootstrap.min.css</code> ‘s content and replace your <code>myblog/source/assets/bootstrap/dist/css/bootstrap-theme.min.css</code>  by its content. <strong>Refresh your browser</strong> at <a href="http://localhost:4000/">localhost:4000/</a> and check out the new look.</p>
 
 <h4 id="create-about-page">Create About page</h4>
 
@@ -221,7 +222,7 @@ myblog$ rake deploy # You will be prompted for Github username and password
 
 <p>Now go to <code>username.github.io</code> and see your result. </p>
 
-<p>One more important thing is to backup your Octopress’s code to Github too. In <code>~/myblog/</code> dir, <code>init</code> a new git to push your source to a repo that would store your Octopress’s code. Note: You may not want to public your <code>_config.yml</code> file, then you can add it to <code>.gitignore</code></p>
+<p class="text-justify">One more important thing is to backup your Octopress’s code to Github too. In <code>~/myblog/</code> dir, <code>init</code> a new git to push your source to a repo that would store your Octopress’s code. Note: You may not want to public your <code>_config.yml</code> file, then you can add it to <code>.gitignore</code></p>
 
 <p><code>sh ~/myblog/
 myblog$ git init 
@@ -233,7 +234,7 @@ myblog$ git push origin master
 
 <p>Great, now your blog has been online, hosted by Github Page which is free of charge and also your source code has been subversioned by Github.</p>
 
-<p>Last but not least, I have to mention that your posts should been written in <a href="https://help.github.com/articles/markdown-basics">Markdown</a> which allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to valid HTML for viewing on GitHub or anywhere that has a Markdown Conversion Tool. I pretty sure that you will find it easier than writting you own HTML ;). Here is an example to illustrate my words:</p>
+<p class="text-justify">Last but not least, I have to mention that your posts should been written in <a href="https://help.github.com/articles/markdown-basics">Markdown</a> which allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to valid HTML for viewing on GitHub or anywhere that has a Markdown Conversion Tool. I pretty sure that you will find it easier than writting you own HTML ;). Here is an example to illustrate my words:</p>
 
 <p>I have a code snippet</p>
 
@@ -283,7 +284,7 @@ $ jekyll serve
  <code>
 </code></p>
 
-<p>As you have seen, &#8220;`  is a syntax for code snippet and  <strong>sh</strong> is specified the language that it would syntax highlighted for - is this example, It is <strong>bash/shell</strong>. Markdown syntax is just beautiful and simplified.</p>
+<p class="text-justify">As you have seen, &#8220;`  is a syntax for code snippet and  <strong>sh</strong> is specified the language that it would syntax highlighted for - is this example, It is <strong>bash/shell</strong>. Markdown syntax is just beautiful and simplified.</p>
 
 <h3 id="create-a-new-post">Create a new post</h3>
 
@@ -291,13 +292,13 @@ $ jekyll serve
 myblog$ rake new_post["this_is_the_title"]
 </code></p>
 
-<p>Then, go to <code>myblog/source/_posts/</code> to edit your new post, you can use any editor you like to write it in Markdown syntax. <strong>Note</strong>: the filename of your post would be in the following form</p>
+<p class="text-justify">Then, go to <code>myblog/source/_posts/</code> to edit your new post, you can use any editor you like to write it in Markdown syntax. <strong>Note</strong>: the filename of your post would be in the following form</p>
 
 <ul>
   <li><code>year-month-day-title.md</code> - you should not change its <code>date</code> prefix.</li>
 </ul>
 
-<p>So now you would be able to deploy your site online and create a new post.  Please take a look at Markdown syntax link below, it will help you a lot when writing your post. Happy blogging! </p>
+<p class="text-justify">So now you would be able to deploy your site online and create a new post.  Please take a look at Markdown syntax link below, it will help you a lot when writing your post. Happy blogging! </p>
 
 <p>Here are some helpful links:</p>
 

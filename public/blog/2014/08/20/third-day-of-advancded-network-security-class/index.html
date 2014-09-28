@@ -29,6 +29,7 @@
 <script src="/assets/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
 <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/assets/jquery.bootstrap-autohidingnavbar.min.js"></script>
+<script src="/assets/javascripts/jquery.particleground.min.js"></script>
 
 
 
@@ -163,7 +164,7 @@
 
 <div class="entry-content clearfix" itemprop="articleBody description"><h3 id="authentication-and-authorization-in-network-security">Authentication and Authorization in Network Security</h3>
 
-<ul>
+<ul class="text-justify">
   <li>Authentication is determining who someone is</li>
   <li>Authorization is determining someone is allowed to do something</li>
   <li>Authorization usually depends one authentication, which properly is not sufficient</li>
@@ -172,14 +173,16 @@
 <h3 id="perimeter-of-defense-and-networks-firewall">Perimeter of Defense and networks: Firewall</h3>
 
 <h4 id="perimeter-defense">Perimeter Defense</h4>
-<ul>
+
+<ul class="text-justify">
   <li>The idea is building an impenetrable perimeter around something valueable to protect it</li>
   <li>History of perimeter defense : castle, fortress, The Great Wall of China, etc.</li>
   <li>But they were all failed because of perimeter defense’s weaknesses</li>
 </ul>
 
 <h4 id="weaknesses-of-perimeter-defense-models">Weaknesses of Perimeter Defense models</h4>
-<ul>
+
+<ul class="text-justify">
   <li>Breaching the perimeter compromises all security</li>
   <li>2 major assumptions:
     <ul>
@@ -197,8 +200,9 @@
 <h4 id="some-types-of-firewall">Some types of Firewall</h4>
 
 <h5 id="filtering-gateways-filtering-firewall">Filtering Gateways (Filtering firewall)</h5>
-<ul>
-  <li>Based on packet header information, either let packet go through or reject it<br /></li>
+
+<ul class="text-justify">
+  <li>Based on packet header information, either let packet go through or reject it</li>
   <li>Stateless firewall</li>
 </ul>
 
@@ -305,9 +309,6 @@
           <a class="badge" href="http://chuongdang.com/tags/#summer" title="Pages tagged summer">summer</a>
           
           
-          <a class="badge" href="http://chuongdang.com/tags/#Prof. Peter Reiher" title="Pages tagged Prof. Peter Reiher">Prof. Peter Reiher</a>
-          
-          
         </p>
         
           <div class="sharing">
@@ -347,11 +348,11 @@
     </li>
   
     <li class="related">
-      <a href="/blog/2014/09/20/reading-list-week-1">Reading list - Week 1</a>
+      <a href="/blog/2014/09/15/how-to-build-this-blog">How to build your blog with Octopress - Part 1</a>
     </li>
   
     <li class="related">
-      <a href="/blog/2014/09/15/how-to-build-this-blog">How to build your blog with Octopress - Part 1</a>
+      <a href="/blog/2014/09/20/reading-list-week-1">Reading list - Week 1</a>
     </li>
   
   </ul>
@@ -430,9 +431,9 @@
   </div>
 </section>
 
-<!-- site_tags: lecture,note,network,securtiy,summer,Prof. Peter Reiher,jekyll,octopress,bootstrap3,octostrap3,github,github-page,quotes,must-read,twitter,medium,startup,entrepreneur,javascript,lifehack,life,writing -->
+<!-- site_tags: lecture,note,network,securtiy,summer,jekyll,octopress,bootstrap3,octostrap3,github,github-page,quotes,must-read,twitter,medium,startup,entrepreneur,javascript,lifehack,life,writing -->
 
-<!-- tag_words: Prof. Peter Reiherbootstrap3entrepreneurgithubgithub-pagejavascriptjekylllecturelifelifehackmediummust-readnetworknoteoctopressoctostrap3quotessecurtiystartupsummertwitterwriting -->
+<!-- tag_words: bootstrap3entrepreneurgithubgithub-pagejavascriptjekylllecturelifelifehackmediummust-readnetworknoteoctopressoctostrap3quotessecurtiystartupsummertwitterwriting -->
   <section class="panel panel-default">
     <div class="panel-heading">
   <div class="panel-title">
@@ -441,9 +442,6 @@
   </div>
   <div class="panel-body">
 <ul class="list-inline">
-    
-    
-    <li style="padding-top: 1px"><a class="btn btn-success btn-sm" href="/tags/#Prof. Peter Reiher">Prof. Peter Reiher <span class="badge">2</span></a></li>
     
     
     <li style="padding-top: 1px"><a class="btn btn-success btn-sm" href="/tags/#bootstrap3">bootstrap3 <span class="badge">1</span></a></li>
@@ -595,7 +593,8 @@
     </script>
     <script type="text/javascript">
     $(".navbar-fixed-top").autoHidingNavbar();
-    
+    $('body').particleground();
+
     </script>
   <script src="/assets/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
 
