@@ -25,12 +25,11 @@
   <meta property="og:title" content="Reading List - Week 2 - Fighting Dreamer">
   
 
-  <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
-<script src="/assets/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+  <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/assets/jquery.bootstrap-autohidingnavbar.min.js"></script>
-<script src="/assets/javascripts/jquery.particleground.min.js"></script>
-
 
 
   
@@ -57,15 +56,16 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button id="collapse-nav-btn" type="button" class="navbar-toggle"  data-target="#horizontal-nav">
+                <span class="sr-only">Toggle navigation</span>
+               <i class="fa fa-bars fa-lg"></i>
             </button>
             <a class="navbar-brand" href="/"><strong>Fighting Dreamer</strong></a>
         </div>
-
-        <div class="navbar-collapse collapse">
+        <script type="text/javascript">
+           
+         </script>
+        <div id="horizontal-nav" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
                     <a rel="index" href="/">Blog</a>
@@ -150,7 +150,7 @@
 
 
 
-      </p>
+      </p>  
 
     
     
@@ -162,7 +162,7 @@
   </header>
 
 
-<div class="entry-content clearfix" itemprop="articleBody description"><p>Hi all, here is the reading list of week 2</p>
+<div class="entry-content clearfix" itemprop="articleBody description"  ><p>Hi all, here is the reading list of week 2</p>
 
 <h2 id="stories-on-mediumhttpsmediumcom">Stories on <a href="https://medium.com">@Medium</a></h2>
 
@@ -173,6 +173,8 @@
 </blockquote>
 
 <h3 id="reasons-why-you-will-never-do-anything-amazing-with-your-lifehttpsmediumcomraymmars-reads7-reasons-why-you-will-never-do-anything-amazing-with-your-life-2a1841f1335d"><a href="https://medium.com/raymmars-reads/7-reasons-why-you-will-never-do-anything-amazing-with-your-life-2a1841f1335d">7 Reasons Why You Will Never Do Anything Amazing With Your Life</a></h3>
+
+<!-- more -->
 
 <blockquote class="text-justify">
   <p>Hmm, I have to admit that I myself caught up with 4 of 7 reasons on the list: <br />
@@ -525,6 +527,9 @@
               $('#table-of-contents').hide();
         }
       });
+      $("#collapse-nav-btn").click(function() {
+                $("#horizontal-nav").collapse('toggle');
+      });
       $('#toc-trigger').click(function() {
         $('#toc-body').toggleClass('toggled');
       });
@@ -538,15 +543,12 @@
         $("#toc-trigger .progress-bar").attr('aria-valuenow', position);
         $("#toc-trigger .progress-bar").css('width',scrollPercent+"%");
 
-      });   
+      });
     });
     </script>
     <script type="text/javascript">
     $(".navbar-fixed-top").autoHidingNavbar();
-    $('body').particleground();
-
     </script>
-  <script src="/assets/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
 
     <footer role="contentinfo"><div class="container">
     <p class="text-muted credits">
@@ -593,8 +595,9 @@
 
 
 
-<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/assets/javascripts/modernizr-2.0.js"></script>
+<script src="/assets/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
   </body>

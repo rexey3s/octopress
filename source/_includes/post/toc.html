@@ -9,7 +9,7 @@
         </div>
 
       <div id="toc-body" class="toggled" >
-      {% for content in page.contents %}
+           {% for content in page.contents %}
         <a  class="list-group-item" style="cursor: pointer;" href="#{{ content | downcase | replace: ' ','-' }}">{{ content }}</a>{% unless forloop.last %}
           {% endunless %}
       {% endfor %}

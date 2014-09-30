@@ -19,6 +19,8 @@ share: true
 * Sometimes as distractions (to other kind of attacks)
 * Many others
 
+<!-- more -->
+
 ### Ways of DOS attacks
 * Can be acheived in a lot of  ways. E.g,
   - shutdown the power source of the target

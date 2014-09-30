@@ -1,15 +1,16 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button id="collapse-nav-btn" type="button" class="navbar-toggle"  data-target="#horizontal-nav">
+                <span class="sr-only">Toggle navigation</span>
+               <i class="fa fa-bars fa-lg"></i>
             </button>
             <a class="navbar-brand" href="{{ root_url }}/"><strong>{{ site.title }}</strong></a>
         </div>
-
-        <div class="navbar-collapse collapse">
+        <script type="text/javascript">
+           
+         </script>
+        <div id="horizontal-nav" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li {% if page.navbar == 'Blog' %}class="active"{% endif %}>
                     <a rel="index" href="{{ root_url }}/">Blog</a>

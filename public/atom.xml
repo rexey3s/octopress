@@ -4,7 +4,7 @@
   <title><![CDATA[Fighting Dreamer]]></title>
   <link href="http://chuongdang.com/atom.xml" rel="self"/>
   <link href="http://chuongdang.com/"/>
-  <updated>2014-09-28T10:45:51+07:00</updated>
+  <updated>2014-09-30T14:31:46+07:00</updated>
   <id>http://chuongdang.com/</id>
   <author>
     <name><![CDATA[Chuong Dang]]></name>
@@ -29,6 +29,8 @@
 </blockquote>
 
 <h3 id="reasons-why-you-will-never-do-anything-amazing-with-your-lifehttpsmediumcomraymmars-reads7-reasons-why-you-will-never-do-anything-amazing-with-your-life-2a1841f1335d"><a href="https://medium.com/raymmars-reads/7-reasons-why-you-will-never-do-anything-amazing-with-your-life-2a1841f1335d">7 Reasons Why You Will Never Do Anything Amazing With Your Life</a></h3>
+
+<!-- more -->
 
 <blockquote class="text-justify">
   <p>Hmm, I have to admit that I myself caught up with 4 of 7 reasons on the list: <br />
@@ -83,6 +85,8 @@
 <h3 id="how-quitting-my-corporate-job-for-my-startup-dream-fcked-my-lifehttpsmediumcomeverything-about-startups-and-entrepreneurshiphow-quitting-my-corporate-job-for-my-startup-dream-f-cked-my-life-up-3b6b3e29b318"><a href="https://medium.com/everything-about-startups-and-entrepreneurship/how-quitting-my-corporate-job-for-my-startup-dream-f-cked-my-life-up-3b6b3e29b318">How quitting my corporate job for my startup dream f*cked my life</a></h3>
 
 <p class="text-justify">A great and must-read article for who desire to become an entrepreneur. The author mentioned a lot a things need to prepare before quiting daily job to start your own business. I particularly love the part he described the social pressure which would come from your friends, your family when you decide to start your start up dream. </p>
+
+<!-- more -->
 
 <p><em>Great quotes from the article above</em></p>
 
@@ -144,6 +148,8 @@
 <blockquote class="text-justify">
   <p>In this tutorial, I’ll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don’t need to know much about Jekyll because Octopress will handle it for you.    </p>
 </blockquote>
+
+<!--more-->
 
 <p>First of all, we need to install and config a lot,but  I’ll try to make it simple.</p>
 
@@ -538,6 +544,8 @@
   <li>Authorization usually depends one authentication, which properly is not sufficient</li>
 </ul>
 
+<!-- more -->
+
 <h3 id="perimeter-of-defense-and-networks-firewall">Perimeter of Defense and networks: Firewall</h3>
 
 <h4 id="perimeter-defense">Perimeter Defense</h4>
@@ -657,6 +665,8 @@
   <li>Sometimes as distractions (to other kind of attacks)</li>
   <li>Many others</li>
 </ul>
+
+<!-- more -->
 
 <h3 id="ways-of-dos-attacks">Ways of DOS attacks</h3>
 <ul>

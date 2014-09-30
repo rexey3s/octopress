@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Network Securtiy | Fighting Dreamer]]></title>
   <link href="http://chuongdang.com/blog/categories/network-securtiy/atom.xml" rel="self"/>
   <link href="http://chuongdang.com/"/>
-  <updated>2014-09-28T10:45:51+07:00</updated>
+  <updated>2014-09-30T14:31:46+07:00</updated>
   <id>http://chuongdang.com/</id>
   <author>
     <name><![CDATA[Chuong Dang]]></name>
@@ -25,6 +25,8 @@
   <li>Authorization is determining someone is allowed to do something</li>
   <li>Authorization usually depends one authentication, which properly is not sufficient</li>
 </ul>
+
+<!-- more -->
 
 <h3 id="perimeter-of-defense-and-networks-firewall">Perimeter of Defense and networks: Firewall</h3>
 
@@ -145,6 +147,8 @@
   <li>Sometimes as distractions (to other kind of attacks)</li>
   <li>Many others</li>
 </ul>
+
+<!-- more -->
 
 <h3 id="ways-of-dos-attacks">Ways of DOS attacks</h3>
 <ul>

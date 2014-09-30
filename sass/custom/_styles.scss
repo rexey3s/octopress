@@ -4,7 +4,7 @@ html, body {
   height: 100%;
 
   .navbar-nav > li > a:hover {
-    border: 2px solid #4582ec !important;
+    border: 1px solid #4582ec !important;
   }
   
 
@@ -29,11 +29,16 @@ html, body {
     border-width: 0 0 0px;
   }
   article.hentry, article.post  {
-   
     margin-bottom: 20px;
     margin-top: auto;
+    padding-right: 5px;
+    padding-left: 5px;
   }
-
+  .blog-index > article {
+    border-top: 2px solid #4582ec;
+    border-radius: 2px;
+   
+  }
   #table-of-contents {
     position: fixed;
     bottom: 5px;

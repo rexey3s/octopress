@@ -14,6 +14,8 @@ Every weekend, I will collect some articles and books which I have read and foun
 
 {:.text-justify}
 A great and must-read article for who desire to become an entrepreneur. The author mentioned a lot a things need to prepare before quiting daily job to start your own business. I particularly love the part he described the social pressure which would come from your friends, your family when you decide to start your start up dream. 
+
+<!-- more -->
  
 _Great quotes from the article above_
 

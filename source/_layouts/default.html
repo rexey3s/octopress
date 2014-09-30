@@ -35,6 +35,9 @@
               $('#table-of-contents').hide();
         }
       });
+      $("#collapse-nav-btn").click(function() {
+                $("#horizontal-nav").collapse('toggle');
+      });
       $('#toc-trigger').click(function() {
         $('#toc-body').toggleClass('toggled');
       });
@@ -48,15 +51,12 @@
         $("#toc-trigger .progress-bar").attr('aria-valuenow', position);
         $("#toc-trigger .progress-bar").css('width',scrollPercent+"%");
 
-      });   
+      });
     });
     </script>
     <script type="text/javascript">
     $(".navbar-fixed-top").autoHidingNavbar();
-    $('body').particleground();
-
     </script>
-  <script src="{{ root_url }}/assets/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
 
     <footer role="contentinfo">{% include footer.html %}</footer>
     {% include after_footer.html %}

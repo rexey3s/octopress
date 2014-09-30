@@ -17,6 +17,8 @@ Hi all, here is the reading list of week 2
 
 ### [7 Reasons Why You Will Never Do Anything Amazing With Your Life](https://medium.com/raymmars-reads/7-reasons-why-you-will-never-do-anything-amazing-with-your-life-2a1841f1335d)
 
+<!-- more -->
+
 {:.text-justify}
 > Hmm, I have to admit that I myself caught up with 4 of 7 reasons on the list: <br>
 ``I havn't failed enough  `` <br>&emsp; Maybe try to become a failure in near future <br>

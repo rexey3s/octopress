@@ -16,6 +16,8 @@ tags: [jekyll, octopress, bootstrap3, octostrap3, github, github-page]
 {:.text-justify}
 >In this tutorial, I'll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don't need to know much about Jekyll because Octopress will handle it for you.    
 
+<!--more-->
+
 First of all, we need to install and config a lot,but  I'll try to make it simple.
 
 ### Jekyll Installation 

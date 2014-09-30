@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Fighting Dreamer]]></title>
   <link href="http://chuongdang.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://chuongdang.com/"/>
-  <updated>2014-09-28T10:45:51+07:00</updated>
+  <updated>2014-09-30T14:31:46+07:00</updated>
   <id>http://chuongdang.com/</id>
   <author>
     <name><![CDATA[Chuong Dang]]></name>
@@ -27,6 +27,8 @@
 <blockquote class="text-justify">
   <p>In this tutorial, I’ll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don’t need to know much about Jekyll because Octopress will handle it for you.    </p>
 </blockquote>
+
+<!--more-->
 
 <p>First of all, we need to install and config a lot,but  I’ll try to make it simple.</p>
 

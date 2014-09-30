@@ -25,12 +25,11 @@
   <meta property="og:title" content="How to Build Your Blog With Octopress - Part 1 - Fighting Dreamer">
   
 
-  <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
-<script src="/assets/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+  <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/assets/jquery.bootstrap-autohidingnavbar.min.js"></script>
-<script src="/assets/javascripts/jquery.particleground.min.js"></script>
-
 
 
   
@@ -57,15 +56,16 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button id="collapse-nav-btn" type="button" class="navbar-toggle"  data-target="#horizontal-nav">
+                <span class="sr-only">Toggle navigation</span>
+               <i class="fa fa-bars fa-lg"></i>
             </button>
             <a class="navbar-brand" href="/"><strong>Fighting Dreamer</strong></a>
         </div>
-
-        <div class="navbar-collapse collapse">
+        <script type="text/javascript">
+           
+         </script>
+        <div id="horizontal-nav" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
                     <a rel="index" href="/">Blog</a>
@@ -150,7 +150,7 @@
 
 
 
-      </p>
+      </p>  
 
     
     
@@ -162,7 +162,7 @@
   </header>
 
 
-<div class="entry-content clearfix" itemprop="articleBody description"><h3 id="introduction">Introduction</h3>
+<div class="entry-content clearfix" itemprop="articleBody description"  ><h3 id="introduction">Introduction</h3>
 
 <blockquote class="text-justify">
   <p>It’s been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I’ve just figured out <a href="http://octopress.org/">Octopress</a> - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most important reason that I love them is they are all free!</p>
@@ -171,6 +171,8 @@
 <blockquote class="text-justify">
   <p>In this tutorial, I’ll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don’t need to know much about Jekyll because Octopress will handle it for you.    </p>
 </blockquote>
+
+<!--more-->
 
 <p>First of all, we need to install and config a lot,but  I’ll try to make it simple.</p>
 
@@ -659,7 +661,7 @@
         </div>
 
       <div id="toc-body" class="toggled" >
-      
+           
         <a  class="list-group-item" style="cursor: pointer;" href="#introduction">Introduction</a>
           
       
@@ -892,6 +894,9 @@
               $('#table-of-contents').hide();
         }
       });
+      $("#collapse-nav-btn").click(function() {
+                $("#horizontal-nav").collapse('toggle');
+      });
       $('#toc-trigger').click(function() {
         $('#toc-body').toggleClass('toggled');
       });
@@ -905,15 +910,12 @@
         $("#toc-trigger .progress-bar").attr('aria-valuenow', position);
         $("#toc-trigger .progress-bar").css('width',scrollPercent+"%");
 
-      });   
+      });
     });
     </script>
     <script type="text/javascript">
     $(".navbar-fixed-top").autoHidingNavbar();
-    $('body').particleground();
-
     </script>
-  <script src="/assets/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
 
     <footer role="contentinfo"><div class="container">
     <p class="text-muted credits">
@@ -960,8 +962,9 @@
 
 
 
-<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/assets/javascripts/modernizr-2.0.js"></script>
+<script src="/assets/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
   </body>

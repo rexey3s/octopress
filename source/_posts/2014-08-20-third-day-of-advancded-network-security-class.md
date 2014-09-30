@@ -15,6 +15,8 @@ share: true
 * Authorization is determining someone is allowed to do something
 * Authorization usually depends one authentication, which properly is not sufficient
 
+<!-- more -->
+
 ### Perimeter of Defense and networks: Firewall
 
 #### Perimeter Defense

@@ -25,12 +25,11 @@
   <meta property="og:title" content="Advanced Network Security Note - 3rd Day of Class - Fighting Dreamer">
   <meta property="og:description" content="">
 
-  <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
-<script src="/assets/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+  <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/assets/jquery.bootstrap-autohidingnavbar.min.js"></script>
-<script src="/assets/javascripts/jquery.particleground.min.js"></script>
-
 
 
   
@@ -57,15 +56,16 @@
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button id="collapse-nav-btn" type="button" class="navbar-toggle"  data-target="#horizontal-nav">
+                <span class="sr-only">Toggle navigation</span>
+               <i class="fa fa-bars fa-lg"></i>
             </button>
             <a class="navbar-brand" href="/"><strong>Fighting Dreamer</strong></a>
         </div>
-
-        <div class="navbar-collapse collapse">
+        <script type="text/javascript">
+           
+         </script>
+        <div id="horizontal-nav" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
                     <a rel="index" href="/">Blog</a>
@@ -150,7 +150,7 @@
 
 
 
-      </p>
+      </p>  
 
     
     
@@ -162,13 +162,15 @@
   </header>
 
 
-<div class="entry-content clearfix" itemprop="articleBody description"><h3 id="authentication-and-authorization-in-network-security">Authentication and Authorization in Network Security</h3>
+<div class="entry-content clearfix" itemprop="articleBody description"  ><h3 id="authentication-and-authorization-in-network-security">Authentication and Authorization in Network Security</h3>
 
 <ul class="text-justify">
   <li>Authentication is determining who someone is</li>
   <li>Authorization is determining someone is allowed to do something</li>
   <li>Authorization usually depends one authentication, which properly is not sufficient</li>
 </ul>
+
+<!-- more -->
 
 <h3 id="perimeter-of-defense-and-networks-firewall">Perimeter of Defense and networks: Firewall</h3>
 
@@ -575,6 +577,9 @@
               $('#table-of-contents').hide();
         }
       });
+      $("#collapse-nav-btn").click(function() {
+                $("#horizontal-nav").collapse('toggle');
+      });
       $('#toc-trigger').click(function() {
         $('#toc-body').toggleClass('toggled');
       });
@@ -588,15 +593,12 @@
         $("#toc-trigger .progress-bar").attr('aria-valuenow', position);
         $("#toc-trigger .progress-bar").css('width',scrollPercent+"%");
 
-      });   
+      });
     });
     </script>
     <script type="text/javascript">
     $(".navbar-fixed-top").autoHidingNavbar();
-    $('body').particleground();
-
     </script>
-  <script src="/assets/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
 
     <footer role="contentinfo"><div class="container">
     <p class="text-muted credits">
@@ -643,8 +645,9 @@
 
 
 
-<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/assets/javascripts/modernizr-2.0.js"></script>
+<script src="/assets/javascripts/search.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
   </body>
