@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorials | Fighting Dreamer]]></title>
   <link href="http://chuongdang.com/blog/categories/tutorials/atom.xml" rel="self"/>
   <link href="http://chuongdang.com/"/>
-  <updated>2014-09-30T14:31:46+07:00</updated>
+  <updated>2014-09-30T22:35:40+07:00</updated>
   <id>http://chuongdang.com/</id>
   <author>
     <name><![CDATA[Chuong Dang]]></name>
@@ -20,13 +20,9 @@
     <id>http://chuongdang.com/blog/2014/09/15/how-to-build-this-blog</id>
     <content type="html"><![CDATA[<h3 id="introduction">Introduction</h3>
 
-<blockquote class="text-justify">
-  <p>It’s been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I’ve just figured out <a href="http://octopress.org/">Octopress</a> - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most important reason that I love them is they are all free!</p>
-</blockquote>
+<p class="text-justify">It’s been a month since I knew about GitHub Page and Jekyll - 2 terrific  things which powered this blog. But until last week, I’ve just figured out <a href="http://octopress.org/">Octopress</a> - a blogging framework for hackers - which is framework that helps making your pesonal blog or site become easier. And one of the most important reason that I love them is they are all free!</p>
 
-<blockquote class="text-justify">
-  <p>In this tutorial, I’ll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don’t need to know much about Jekyll because Octopress will handle it for you.    </p>
-</blockquote>
+<p class="text-justify">In this tutorial, I’ll show you how to build a blog using Octopress. If you have already known about Jekyll, I suggest you should take a look on Octopress. Unless you have, you don’t need to know much about Jekyll because Octopress will handle it for you.    </p>
 
 <!--more-->
 

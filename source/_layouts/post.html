@@ -39,12 +39,12 @@ single: true
         {% endif %}
       </footer>
     </article>
+    {% include post/related_posts.html %}
     {% if site.disqus_short_name and page.comments == true %}
       <section>
         <h1>Comments</h1>
         <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
       </section>
-    {% include post/related_posts.html %}
       
     {% endif %}
   </div>
