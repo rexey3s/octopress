@@ -8,7 +8,8 @@ html, body {
   }
   .read-more-btn:hover {
     border: 2px solid #4582ec;
-  } 
+  }
+  transition: all .5s;
 
   /* The html and body elements cannot have any padding or margin. */
 }
@@ -78,11 +79,93 @@ html, body {
 
 
 }
+ #prevnext nav a.prev {
+    left: 0;
+    margin-left: 0;
+  }
+  #prevnext nav a.next {
+    right: 0;
+    margin-right: 0;
+  }
+  #prevnext nav a {
+    top: 50%; 
+    display: block;
+    outline: 0;
+    text-align: left;
+    z-index: 1000;
+    position: fixed;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .nav-growpop div {
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+    width: 440px;
+    height: 144px;
+    background: #f8f8f8;
+    opacity: 0;
+    transition: -webkit-transform .3s,opacity .3s;
+    transition: transform .3s,opacity .3s;
+  } 
+  .nav-growpop a.prev div {
+    left: 0;
+    padding: 20px 20px 20px 50px;
+    text-align: right;
+    -webkit-transform: translateY(-50%) translateX(-100%) scale(0.75);
+    transform: translateY(-50%) translateX(-100%) scale(0.75);
+  }
+  .nav-growpop a.next div {
+    right: 0;
+    padding: 20px 50px 20px 20px;
+    -webkit-transform: translateY(-50%) translateX(100%) scale(0.75);
+    transform: translateY(-50%) translateX(100%) scale(0.75);
+  }
+  .nav-growpop a:hover {
+    text-decoration: none;
+  }
+  .nav-growpop a:hover .icon-wrap {
+    border-top-width: 40px;
+    border-bottom-width: 40px;
+    transition-delay: 0s;
+  }
+  .nav-growpop a:hover div {
+    opacity: 1;
+    transition-delay: .3s;
+    -webkit-transform: translateY(-50%) translateX(0) scale(1);
+    transform: translateY(-50%) translateX(0) scale(1);
+  }
+  .nav-growpop .icon-wrap {
+    position: relative;
+    z-index: 100;
+    display: block;
+    padding: 20px 10px;
+    border: 0 solid #4582ec;
+    background: #4582ec;
+    transition: border-width .3s .15s;
+    font-size: 20px;
+    color: #fff;
+  }
+  .nav-growpop span {
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    color: #7b8a8b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: .7em;
+    line-height: 1.2;
+  }
+  .nav-growpop {
+     @media screen and (max-width: 768px) {
+     display:none;
+     }
+  }
   /* */
   .toggled {
     display: none;
   }
-
   #sidebar-toggle:hover .fa-toggle-off,
   #sidebar-toggle .fa-toggle-on {
       display: none;

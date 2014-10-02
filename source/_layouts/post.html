@@ -36,6 +36,28 @@ single: true
             <li class="next"><a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a></li>
             {% endif %}
           </ul>
+          <div id="prevnext">
+            <nav class="nav-growpop">
+            {% if page.previous.url %}
+              <a class="prev" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">
+                  <span class="icon-wrap fa fa-arrow-left"></span>
+                  <div>
+                      <span>Previous</span>
+                      <h3>{{page.previous.title}}</h3>
+                  </div>
+              </a>
+              {% endif %}
+              {% if page.next.url %}
+              <a class="next" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">
+                  <span class="icon-wrap fa fa-arrow-right"></span>
+                  <div>
+                      <span>Next</span>
+                      <h3>{{page.next.title}}</h3>
+                  </div>
+              </a>
+             {% endif %} 
+          </nav>
+        </div>
         {% endif %}
       </footer>
     </article>
