@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Worklog | Fighting Dreamer]]></title>
+  <link href="http://chuongdang.com/blog/categories/worklog/atom.xml" rel="self"/>
+  <link href="http://chuongdang.com/"/>
+  <updated>2014-10-10T00:24:49+07:00</updated>
+  <id>http://chuongdang.com/</id>
+  <author>
+    <name><![CDATA[Chuong Dang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to Install SWRL Tab Plugin for Protege 5]]></title>
+    <link href="http://chuongdang.com/blog/2014/10/09/how-to-install-swrl-tab-plugin-for-protege-5"/>
+    <updated>2014-10-09T23:45:00+07:00</updated>
+    <id>http://chuongdang.com/blog/2014/10/09/how-to-install-swrl-tab-plugin-for-protege-5</id>
+    <content type="html"><![CDATA[<p class="text-justify">Protege Team has recently pushed out a new SWRL API (included SWRL API, SQWRL API, Drools Rule Engine and a SWRL Tab Plugin). SWRL Tab Plugin is a powerful tools that can help you manipuladte rule and query OWL by SQWRL. The tool ‘s come out so many dependencies are missing that you have to build and install from source. Here is the guide.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+  <li><a href="http://protege.stanford.edu/products.php#desktop-protege">Protege 5</a></li>
+  <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">Java 7</a></li>
+  <li>Maven </li>
+</ul>
+
+<p>Install maven for Ubuntu</p>
+
+<p><code>sh
+$ sudo apt-get install maven
+</code></p>
+
+<h3 id="swrl-api-swrl-drools-engine">SWRL API, SWRL Drools Engine</h3>
+
+<ol>
+  <li>Build and install SWRL API to local maven repositories</li>
+</ol>
+
+<p>Clone this  repo <a href="https://github.com/protegeproject/swrlapi">SWRL API</a></p>
+
+<p><code>sh
+$ git clone https://github.com/protegeproject/swrlapi.git
+$ cd swrlapi
+swrlapi$ mvn clean package # =&gt; Build jar 
+swrlapi$ mvn install:install-file -Dfile=./target/swrlapi-1.0-SNAPSHOT.jar
+    \ -DpomFile=./pom.xml
+</code></p>
+
+<p>or if you run into a problem of missing dependencies , follow this way</p>
+
+<p><code>sh
+$ git clone https://github.com/protegeproject/swrlapi.git
+$ cd swrlapi
+swrlapi$ mvn dependency:go-offline
+swrlapi$ mvn -o clean package # =&gt; Build jar 
+swrlapi$ mvn install:install-file -Dfile=./target/swrlapi-1.0-SNAPSHOT.jar
+    \ -DpomFile=./pom.xml
+</code></p>
+
+<ol>
+  <li>Build and install SWRL Drools Engine to local maven repositories</li>
+</ol>
+
+<p>Clone this repo <a href="https://github.com/protegeproject/swrlapi-drools-engine">SWRL Drools Engine</a></p>
+
+<p><code>sh
+$ git clone https://github.com/protegeproject/swrlapi-drools-engine.git
+$ cd swrlapi-drools-engine
+swrlapi-drools-engine$ mvn clean package
+swrlapi-drools-engine$ mvn install:install-file -Dfile=./target/swrlapi-drools-engine-1.0-SNAPSHOT.jar
+    \ -DpomFile=./pom.xml
+</code></p>
+
+<h3 id="build-and-install-swrl-tab-plugin">Build and install SWRL Tab plugin</h3>
+
+<p>Check out <a href="https://github.com/protegeproject/swrltab-plugin">this repo</a></p>
+
+<p><code>sh 
+$ git clone https://github.com/protegeproject/swrltab-plugin.git
+$ cd swrltab-plugin
+swrltab-plugin$ mvn clean package
+</code></p>
+
+<p>Then copy the <code>jar</code> file in <code>target</code> folder to the <code>plugin</code> folder in Protege_5 folder</p>
+
+<p><code>
+swrltab-plugin$ cp target/swrltab-plugin-1.0-SNAPSHOT.jar ~/Protege_5.0-beta/plugins
+</code></p>
+
+<p>Here some images of SWRLTabs working in Protege 5</p>
+
+<p><strong>SWRLTab</strong> 
+<img src="/images/swrltab.png" alt="alt text" title="SWRLTab" /></p>
+
+<p><strong>SQWRLTab</strong> 
+<img src="/images/sqwrltab.png" alt="alt text  " title="SQWRLTab" /></p>
+
+<p><strong>Rules View</strong> 
+<img src="/images/normalruleview.png" alt="alt text" title="Rules View" /></p>
+
+]]></content>
+  </entry>
+  
+</feed>

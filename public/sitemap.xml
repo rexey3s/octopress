@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://chuongdang.com/blog/2014/10/09/how-to-install-swrl-tab-plugin-for-protege-5</loc>
+    
+    <lastmod>2014-10-09T23:45:00+07:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://chuongdang.com/blog/2014/10/05/reading-list-week-3</loc>
     
     <lastmod>2014-10-05T23:25:29+07:00</lastmod>
@@ -53,35 +61,35 @@
   
   <url>
     <loc>http://chuongdang.com/tags/</loc>
-    <lastmod>2014-10-06T23:05:06+07:00</lastmod>
+    <lastmod>2014-10-10T00:24:49+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://chuongdang.com/blog/archives/</loc>
-    <lastmod>2014-10-06T23:05:06+07:00</lastmod>
+    <lastmod>2014-10-10T00:24:49+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://chuongdang.com/search/</loc>
-    <lastmod>2014-10-06T23:05:06+07:00</lastmod>
+    <lastmod>2014-10-10T00:24:49+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://chuongdang.com/</loc>
-    <lastmod>2014-10-06T23:05:06+07:00</lastmod>
+    <lastmod>2014-10-10T00:24:49+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://chuongdang.com/about/</loc>
-    <lastmod>2014-10-06T23:05:06+07:00</lastmod>
+    <lastmod>2014-10-10T00:24:49+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
