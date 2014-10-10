@@ -10,6 +10,8 @@ tags: [protege5, owlapi, swrlapi, swrltab, sqwrl, ontology, owl2, query, rule]
 {:.text-justify}
 Protege Team has recently pushed out a new SWRL API (included SWRL API, SQWRL API, Drools Rule Engine and a SWRL Tab Plugin). SWRL Tab Plugin is a powerful tools that can help you manipuladte rule and query OWL by SQWRL. The tool 's come out so many dependencies are missing that you have to build and install from source. Here is the guide.
 
+<!-- more -->
+
 ### Prerequisites
 
 * [Protege 5](http://protege.stanford.edu/products.php#desktop-protege)
