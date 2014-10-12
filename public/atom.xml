@@ -4,7 +4,7 @@
   <title><![CDATA[Fighting Dreamer]]></title>
   <link href="http://chuongdang.com/atom.xml" rel="self"/>
   <link href="http://chuongdang.com/"/>
-  <updated>2014-10-10T00:27:46+07:00</updated>
+  <updated>2014-10-12T16:43:01+07:00</updated>
   <id>http://chuongdang.com/</id>
   <author>
     <name><![CDATA[Chuong Dang]]></name>
@@ -14,11 +14,77 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Reading List - Week 4]]></title>
+    <link href="http://chuongdang.com/blog/2014/10/12/reading-list-week-4"/>
+    <updated>2014-10-12T13:57:36+07:00</updated>
+    <id>http://chuongdang.com/blog/2014/10/12/reading-list-week-4</id>
+    <content type="html"><![CDATA[<p>What an irritate week !
+But thanks to these inspirational talks which help me feel better</p>
+
+<h2 id="ted-talks">TED Talks</h2>
+
+<h3 id="ted-ed-learning-anything-in-20-hourshttpswwwyoutubecomwatchvpsrl3m29pgk"><a href="https://www.youtube.com/watch?v=PSRL3m29Pgk">TED-ed Learning anything in 20 hours</a></h3>
+
+<div class="embed-video-container text-justify"><iframe src="//www.youtube.com/embed/PSRL3m29Pgk" allowfullscreen="" class="text-justify"></iframe></div>
+
+<blockquote class="text-justify">
+  <p>If you have heard someone said that it usually took 10,000 hours to learn a thing. Then, don’t believe it, it’s stereotype and reality prove a different outcome. The truth is 20 hours is sufficiently enough for you to learn anything and implement its knowlegde in practice. More details, how to do that please watch the video above. In fact, I myself have proven this theory by learning about building this blog in approximately 28-30 hours.</p>
+</blockquote>
+
+<!-- more -->
+
+<h3 id="series-of-motivational-and-inspirational-talks-from-richard-st-john-will-make-your-day">Series of motivational and inspirational talks from Richard St. John will make your day</h3>
+
+<h4 id="the-8-traits-successful-people-have-in-common">The 8 Traits Successful People Have in Common</h4>
+
+<h4 id="passion">1. Passion</h4>
+
+<div class="embed-video-container"><iframe src="//www.youtube.com/embed/wufwZOYBRiU" allowfullscreen=""></iframe></div>
+
+<h4 id="work">2. Work</h4>
+
+<div class="embed-video-container"><iframe src="//www.youtube.com/embed/n_-8dvEg0wc" allowfullscreen=""></iframe></div>
+
+<h4 id="focus">3. Focus</h4>
+
+<div class="embed-video-container"><iframe src="//www.youtube.com/embed/KtGqeuAWjSQ" allowfullscreen=""></iframe></div>
+
+<h3 id="more-talks">More talks</h3>
+
+<h4 id="scientific-explanation-about-sleep-paralysishttpswwwyoutubecomwatchvmhwwpch-1uy"><a href="https://www.youtube.com/watch?v=MHwWPch-1UY">Scientific explanation about Sleep Paralysis</a></h4>
+
+<h4 id="forge-meaning-build-identityhttpswwwyoutubecomwatchvow7hvv9ieyq"><a href="https://www.youtube.com/watch?v=ow7HvV9iEyQ">Forge Meaning, Build Identity</a></h4>
+
+<h2 id="on-medium-this-week">On @Medium this week</h2>
+
+<h3 id="courage-and-hopehttpsmediumcomstronger-thancourage-and-hope-a4400e0dcdb1"><a href="https://medium.com/stronger-than/courage-and-hope-a4400e0dcdb1">1. Courage and Hope</a></h3>
+
+<p>Those respectful words are from Malala Yousafzay - a 17-year-old Pakistani girl who has recently received a Nobel Prize for Peace. In this story, she shared about her thoughts about education, equality for children.</p>
+
+<h3 id="sex-is-sex-money-is-moneyhttpsmediumcommattersex-is-sex-but-money-is-money-e7c10091713f"><a href="https://medium.com/matter/sex-is-sex-but-money-is-money-e7c10091713f">2. Sex is sex. Money is money</a></h3>
+
+<p>A tragic and somewhat tempted story. But it reflects an unspokeable side of our current society.</p>
+
+<h3 id="great-writing-advisehttpsmediumcompenguinrandomusa-to-x-writing-advice-courtesy-of-copy-chief-benjamin-dreyer-c00bd746b99e"><a href="https://medium.com/@penguinrandomus/a-to-x-writing-advice-courtesy-of-copy-chief-benjamin-dreyer-c00bd746b99e">3. Great Writing Advise</a></h3>
+
+<h2 id="others-which-you-may-concern">Others which you may concern</h2>
+
+<h3 id="fairy-tale-about-a-girl-sold-everything-to-learn-game-designhttpventurebeatcom20141011pixel-rift-oculus-game"><a href="http://venturebeat.com/2014/10/11/pixel-rift-oculus-game/">1. Fairy tale about a girl sold everything to learn game design</a></h3>
+
+<h3 id="entrepreneur-porn-is-fine-but-remember-that-its-just-pornhttpwwwtechinasiacomentrepreneur-porn-fine-remember-porn"><a href="http://www.techinasia.com/entrepreneur-porn-fine-remember-porn/">2. Entrepreneur porn is fine, but remember that it’s just porn</a></h3>
+
+<p><strong>Above article is a counter-argument to <a href="https://medium.com/everything-about-startups-and-entrepreneurship/how-quitting-my-corporate-job-for-my-startup-dream-f-cked-my-life-up-3b6b3e29b318">Ali Mess’s startup article</a> which I posted in <a href="http://chuongdang.com/blog/2014/09/20/reading-list-week-1">my first reading list</a>.</strong></p>
+
+<p>Happy reading and watching the videos!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[How to Install SWRL Tab Plugin for Protege 5]]></title>
     <link href="http://chuongdang.com/blog/2014/10/09/how-to-install-swrl-tab-plugin-for-protege-5"/>
     <updated>2014-10-09T23:45:00+07:00</updated>
     <id>http://chuongdang.com/blog/2014/10/09/how-to-install-swrl-tab-plugin-for-protege-5</id>
-    <content type="html"><![CDATA[<p class="text-justify">Protege Team has recently pushed out a new SWRL API (included SWRL API, SQWRL API, Drools Rule Engine and a SWRL Tab Plugin). SWRL Tab Plugin is a powerful tools that can help you manipuladte rule and query OWL by SQWRL. The tool ‘s come out so many dependencies are missing that you have to build and install from source. Here is the guide.</p>
+    <content type="html"><![CDATA[<p class="text-justify"><a href="https://github.com/protegeproject">Protege Team</a> has recently pushed out a new SWRL API (included SWRL API, SQWRL API, Drools Rule Engine and a SWRL Tab Plugin). SWRL Tab Plugin is a powerful tools that can help you manipuladte rule and query OWL by SQWRL. The tool ‘s come out so many dependencies are missing that you have to build and install from source. Here is the guide.</p>
 
 <!-- more -->
 

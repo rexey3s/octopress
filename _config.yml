@@ -62,7 +62,7 @@ default_asides: [custom/asides/search_result.html,asides/recent_posts.html,custo
 # post_asides:
 # page_asides:
 post_asides: [
-    custom/asides/search_result.html,asides/recent_posts.html,custom/asides/category_list.html, custom/asides/tag_list.html, asides/github.html
+    custom/asides/search_result.html,custom/asides/related_posts.html,asides/recent_posts.html,custom/asides/category_list.html, custom/asides/tag_list.html, asides/github.html
 ]
 # ----------------------- #
 #   3rd Party Settings    #

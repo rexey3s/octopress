@@ -3,7 +3,8 @@ layout: post
 title: "Reading List Week 3"
 date: 2014-10-05 23:25:29 +0700
 comments: true
-categories: 
+categories: [Reading list]
+tags: [medium, startup, meteor, open-source, career, ted, telescope, webdev]
 ---
 
 Reading list this week was a bit late, sorry about that!
